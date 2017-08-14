@@ -1,0 +1,40 @@
+//test if working
+// .site-footer {
+//   color: hotpink;
+//   background-color: black;
+//   font-size: 60px;
+// }
+
+.site-footer {
+  background-image: url(./images/dark-wood@2x.png);
+}
+
+// footer-box-container{}
+// footer-box-item{}
+
+h3 {
+  color: $color_brand-orange;
+  text-transform: uppercase;
+}
+
+p{
+  color: white;
+}
+
+.contact{
+  p {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+// .business-hours{}
+// .footer-logo{}
+
+.copyright {
+  .p {
+    text-transform: uppercase;
+    text-align: center;
+}
+}

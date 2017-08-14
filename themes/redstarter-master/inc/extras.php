@@ -44,8 +44,7 @@ function remove_menu_elements()
 add_action('admin_init', 'remove_menu_elements', 102);
 
 // //customize the title attribute for the login logo link
-//THIS BREAKS MY SITE!
-// @return string
+//THIS BREAKS MY SITE! -->@return string
 // function inhabitent_login_title() {
 // 	return 'Inhabitent';
 // }
