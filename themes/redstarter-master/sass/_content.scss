@@ -25,6 +25,7 @@
 .entry-content,
 .entry-summary {
 	margin: $base__space-unit 0 0;
+	font-family: 'Merriweather';
 }
 
 .page-links {
@@ -35,8 +36,12 @@
 // My Styling
 // .entry-header{}
 // 
-// .entry-meta{
-// 	$color_brand-green;
+// .blog .entry-meta{
+// 	background-color: $color_brand-green;
+// text-transform: uppercase;
+// color: white;
+// position: absolute;
+// display: inline-block;
 // }
 // .entry-title{
 // 	color: white;
@@ -44,7 +49,9 @@
 //		color: $color__background-ins;
 //	}
 // }
-// .entry-content{}
+// .entry-content{
+//	color: $color__text-main;
+//}
 
 /* Asides */
 
