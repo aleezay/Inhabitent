@@ -37,7 +37,7 @@
 					<div class="footer-box-item">
 						<div class="footer-logo">
 							<a href="#">
-							<img src=<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-text.svg alt="Inhabitent logo"/></a>
+							<img src=<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-text-dark.svg alt="Inhabitent logo"/></a>
 						</div> <!--footer logo-->
 						</div> <!--footer-box-item3-->
 

@@ -27,7 +27,8 @@ blockquote, q {
 }
 
 hr {
-	background-color: $color__background-hr;
+	background-color: hotpink;
+	//$color__background-hr;
 	border: 0;
 	height: 1px;
 	margin-bottom: $base__space-unit;
@@ -68,3 +69,4 @@ table {
 	margin: 0 0 $base__space-unit;
 	width: 100%;
 }
+

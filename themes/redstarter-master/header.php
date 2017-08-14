@@ -21,15 +21,28 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
-				<div class="site-branding">
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-				</div><!-- .site-branding -->
+				<div class="nav-logo-container">
+					<div class="nav-logo">
+					<a href="#">
+						<img src=<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-tent.svg alt="Inhabitent tent logo"/>
+						<h1 class="site-title">Inhabitent</h1>
+					</a>
+					</div> <!--nav-logo-->
+				</div><!--nav-logo-container-->
+
+
+					<!--DEFAULT, DO I NEED THESE?
+						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<p class="site-description"><?php bloginfo( 'description' ); ?></p>-->
+	
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+					<button class="main-nav-menu-container" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
-			</header><!-- #masthead -->
+				</nav> <!--#site-navigation--> 
+			</header> <!--#masthead-->
 
-			<div id="content" class="site-content">
+
+			<!--	</div>
+			</header>
+
