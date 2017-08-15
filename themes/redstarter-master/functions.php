@@ -85,7 +85,9 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
 function red_starter_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'jquery' );//wordpress enqueues jquery 
+	wp_enqueue_script( 'jquery' );
+
+	wp_enqueue_style( 'tent-style', get_stylesheet_uri() );
 
 // extrafontawesome	
 wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/993f311164.js', array(), '4.7.0', false);//dependency is an array.
