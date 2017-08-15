@@ -602,13 +602,18 @@ a {
 
 .widget-title {
   text-transform: uppercase;
-  color: white; }
+  color: black; }
 
-.contact-meta a {
-  color: #248A83; }
-  .contact-meta a:hover {
-    color: black;
+.contact-meta {
+  color: black; }
+  .contact-meta a {
+    color: #248A83;
     text-decoration: none; }
+    .contact-meta a:hover {
+      color: black; }
+
+.text-widget {
+  color: black; }
 
 /*--------------------------------------------------------------
 # Content
@@ -636,6 +641,21 @@ a {
 .page-links {
   clear: both;
   margin: 0 0 1.5rem; }
+
+.blog .entry-meta {
+  background-color: #248A83;
+  text-transform: uppercase;
+  color: white;
+  position: absolute;
+  display: inline-block; }
+
+.entry-title {
+  color: white; }
+  .entry-title:hover {
+    color: #fff9c0; }
+
+.entry-content {
+  color: #404040; }
 
 /* Asides */
 .blog .format-aside .entry-title,

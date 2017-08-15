@@ -16,10 +16,6 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
-		<!--<div class="hero-banner-logo">
- 			<img src="<?php echo get_template_directory_uri(); ?>./images/logos/inhabitent-logo-full.svg" alt="Inhabitent Camping Supply Co.">
- 		</div>-->
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

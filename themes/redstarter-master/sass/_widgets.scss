@@ -19,15 +19,20 @@
 // SIDEBAR
 .widget-title{
 	text-transform: uppercase;
-	color:white;
+	color:black;
 }
 
 .contact-meta {
+	color: black;
 	a{
 		color: $color_brand-green;
-		  &:hover {
-			  color: black;
 		text-decoration: none;
+		  &:hover {
+			  color: black;		
 		}
 	}
+}
+
+.text-widget {
+	color:black;
 }

@@ -36,22 +36,22 @@
 // My Styling
 // .entry-header{}
 // 
-// .blog .entry-meta{
-// 	background-color: $color_brand-green;
-// text-transform: uppercase;
-// color: white;
-// position: absolute;
-// display: inline-block;
-// }
-// .entry-title{
-// 	color: white;
-//	 &:hover{
-//		color: $color__background-ins;
-//	}
-// }
-// .entry-content{
-//	color: $color__text-main;
-//}
+.blog .entry-meta{
+background-color: $color_brand-green;
+text-transform: uppercase;
+color: white;
+position: absolute;
+display: inline-block;
+}
+.entry-title{
+	color: white;
+	 &:hover{
+		color: $color__background-ins;
+	}
+}
+.entry-content{
+	color: $color__text-main;
+}
 
 /* Asides */
 
