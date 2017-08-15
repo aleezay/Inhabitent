@@ -351,7 +351,6 @@ blockquote, q {
     content: ""; }
 
 hr {
-  background-color: hotpink;
   border: 0;
   height: 1px;
   margin-bottom: 1.5rem; }
@@ -655,9 +654,18 @@ a {
 --------------------------------------------------------------*/
 /* Front page */
 .site-footer {
-  color: hotpink;
-  background-color: black;
-  font-size: 60px; }
+  background-image: url(../../images/dark-wood.png);
+  font-size: 16px; }
+
+.footer-box-container {
+  display: -ms-flexbox;
+  display: flex; }
+
+.footer-box-item {
+  margin: 2.8rem;
+  padding-right: 1.5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 h3 {
   color: #d99054;
@@ -666,11 +674,24 @@ h3 {
 p {
   color: white; }
 
-.contact p {
+.contact a {
+  color: white;
   text-decoration: none; }
-  .contact p:hover {
+  .contact a:hover {
     text-decoration: underline; }
 
-.copyright .p {
-  text-transform: uppercase;
+.footer-logo {
+  width: 280px;
+  height: 55px;
+  -ms-flex-line-pack: right;
+      align-content: right; }
+
+.copyright-container {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   text-align: center; }
+  .copyright-container .copyright {
+    text-align: center; }
+    .copyright-container .copyright p {
+      text-transform: uppercase;
+      margin: 0; }

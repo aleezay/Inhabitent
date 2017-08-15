@@ -1,16 +1,18 @@
-
 .site-footer {
-  color: hotpink;
-  background-color: black;
-  font-size: 60px;
+  background-image: url(../../images/dark-wood.png);
+  font-size: 16px;
+  // padding: 45px 80px;
 }
+.footer-box-container{
+  display: flex;
 
-.site-footer {
-  // background-image: url(./images/dark-wood@2x.png);
+  // align-content: center;
 }
-
-// footer-box-container{}
-// footer-box-item{}
+.footer-box-item{
+    margin: 2.8rem;
+    padding-right: 1.5rem;
+  flex-wrap: wrap;
+}
 
 h3 {
   color: $color_brand-orange;
@@ -21,20 +23,39 @@ p{
   color: white;
 }
 
-.contact{
-  p {
+.contact a {
+    color: white; 
     text-decoration: none;
     &:hover {
       text-decoration: underline;
     }
   }
-}
-// .business-hours{}
-// .footer-logo{}
 
-.copyright {
-  .p {
-    text-transform: uppercase;
-    text-align: center;
+// .business-hours{}
+.footer-logo{
+  width: 280px;
+  height: 55px;
+//   padding-bottom: 55px;
+//   padding-left: 80px;
+align-content: right;
 }
-}
+// .footer-box-item:last-child {
+//     padding-right: 0;
+//     width: 50%;
+// }
+
+.copyright-container {
+  align-self: flex-end;
+text-align: center;
+  .copyright{
+     text-align: center;
+     p { 
+        text-transform: uppercase;
+        margin:0;
+       
+        
+      }
+}}
+// img{ height: auto;
+
+// }

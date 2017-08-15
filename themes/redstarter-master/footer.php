@@ -41,8 +41,10 @@
 						</div> <!--footer logo-->
 						</div> <!--footer-box-item3-->
 
-						<div class="copyright">
+						<div class="copyright-container">
+							<div class="copyright">
 							<p>copyright &copy; <?php echo date("Y");?> Inhabitent </p>
+						</div>
 						</div>
 
 				</div> <!--footer-box-container-->
