@@ -17,6 +17,10 @@
 }
 
 // SIDEBAR
+
+// .widget-area{
+	
+// }
 .widget-title{
 	text-transform: uppercase;
 	color:black;
@@ -33,6 +37,9 @@
 	}
 }
 
-.text-widget {
+.textwidget p {
 	color:black;
+	.day-of-week{
+		font-weight:bold;
+	}
 }

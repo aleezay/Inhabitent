@@ -41,14 +41,13 @@
 						</div> <!--footer logo-->
 						</div> <!--footer-box-item3-->
 
+				</div> <!--footer-box-container-->
 						<div class="copyright-container">
 							<div class="copyright">
 							<p>copyright &copy; <?php echo date("Y");?> Inhabitent </p>
 						</div>
 						</div>
-
-				</div> <!--footer-box-container-->
-
+						
 				<div class="site-info">
 					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
 				</div>

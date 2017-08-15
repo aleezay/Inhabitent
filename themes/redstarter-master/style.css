@@ -612,8 +612,10 @@ a {
     .contact-meta a:hover {
       color: black; }
 
-.text-widget {
+.textwidget p {
   color: black; }
+  .textwidget p .day-of-week {
+    font-weight: bold; }
 
 /*--------------------------------------------------------------
 # Content
@@ -673,6 +675,11 @@ a {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.front-page-hero {
+  background-image: url(../../images/home-hero.jpg);
+  background-size: cover;
+  height: 100vh; }
+
 .site-footer {
   background-image: url(../../images/dark-wood.png);
   font-size: 16px; }

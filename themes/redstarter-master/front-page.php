@@ -12,10 +12,15 @@
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
-
+	
+  <main id="main" class="site-main" role="main">
+			
+<div class="front-page-container">
+  <div class="front-page-hero"></div>
       <div class="hero-banner-logo">
  			<img src="<?php echo get_template_directory_uri(); ?>./images/logos/inhabitent-logo-full.svg" alt="Inhabitent Camping Supply Co.">
- 		</div>
+  </div>
+     </div>
 
 
 <div class = "most-recent-journals" >
@@ -41,6 +46,6 @@
           </div>
        <?php endforeach; wp_reset_postdata(); ?>
        </div>
-
+</main>
        <?php get_footer(); ?>
  
