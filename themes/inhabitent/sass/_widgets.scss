@@ -1,0 +1,76 @@
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+
+.widget {
+	// margin: 0 0 $base__space-unit;
+	margin: 0 0 3rem;
+	/* Make sure select elements fit in widgets. */
+	  ul{list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+		}
+	select {
+		max-width: 100%;
+	}
+}
+
+/* Search widget. */
+.widget_search .search-submit {
+	display: none;
+}
+
+// SIDEBAR
+
+#secondary{
+ width: 30%;
+ padding-top: 60px;
+ padding-left: 45px;
+ border-left: 1px solid #e1e1e1;
+}
+
+// .sidebar-container{
+// 	display: flex;
+// }
+
+.widget-area {
+	display:block;
+	justify-content: right;
+	margin:0, auto;
+	align-self: right;
+
+	// width: 30%;
+}
+
+.widget-title{
+	text-transform: uppercase;
+	color:black;
+}
+
+.contact-meta, #archives-2 {
+	color: black;
+	a{
+		color: $color_brand-green;
+		text-decoration: none;
+		  &:hover {
+			  color: black;		
+		}
+	}
+}
+
+.textwidget p {
+	color:black;
+	.day-of-week{
+		font-weight:bold;
+	}
+}
+
+.inhabitent-business-hours-class {
+	p {color:black;
+	.day-of-week{
+		font-weight: 700;
+	}
+	}
+}
+
+

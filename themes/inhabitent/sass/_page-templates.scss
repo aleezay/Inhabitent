@@ -1,0 +1,13 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+
+/* Front page */
+.front-page-hero {
+ background-image: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url(../../images/home-hero.jpg);
+ background-size: cover;
+ height:100vh;
+}
+.hero-banner-logo{
+  position: relative;
+}
