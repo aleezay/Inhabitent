@@ -130,7 +130,7 @@ class Inhabitent_Business_Hours extends WP_Widget {
 		$instance = $old_instance;
 
 		$instance['title'] = strip_tags( $new_instance['title'] );
-		$instance['monday-friday'] = strip_tags( $new_instance['monday-friday'] );
+		$instance['monday_friday'] = strip_tags( $new_instance['monday_friday'] );
 		$instance['saturday'] = strip_tags( $new_instance['saturday'] );
 		$instance['sunday'] = strip_tags( $new_instance['sunday'] );
 		
@@ -152,7 +152,7 @@ class Inhabitent_Business_Hours extends WP_Widget {
 			(array) $instance,
 			array(
 				'title' 				=> 'Business Hours', //this is what will show up in the back end in wp
-				'monday-friday' => '',
+				'monday_friday' => '',
 				'saturday'		  => '',
 				'sunday' 				=> ''
 			)
