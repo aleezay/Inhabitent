@@ -3,19 +3,22 @@
   font-size: 16px;
   max-height: 500px;
   min-width: $site_width;
-   flex-wrap: wrap;
+  flex-wrap: wrap;
   // padding: 45px 80px;
 }
+
+.footer-flex{
+  display:flex;
+}
+
 .footer-box-container{
   display: flex;
   // align-content: flex-end;
- 
-
   // align-content: center;
 }
 .footer-box-item{
-    margin: 2.8rem;
-    padding-right: 1.5rem;
+  margin: 2.8rem;
+  padding-right: 1.5rem;
   flex-wrap: wrap;
 }
 
@@ -51,13 +54,11 @@ align-content: right;
 
 .copyright-container {
   align-self: flex-end;
-text-align: center;
+  text-align: center;
   .copyright{
      text-align: center;
      p { 
         text-transform: uppercase;
         margin:0;
-       
-        
       }
 }}
