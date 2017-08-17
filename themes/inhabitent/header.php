@@ -24,12 +24,11 @@
 			<div class="top-menu-container">
 
 				<div class="site-branding">
-					<h1 class="site-title screen-reader-text"></h1>			
-										
+					<h1 class="site-title screen-reader-text"></h1>									
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-						<div class="nav-logo-container">
+					<div class="nav-logo-container">
 						<img src=<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-tent.svg alt="Inhabitent logo"/></a>
 					</div>
 					<div class="nav-items-container">
