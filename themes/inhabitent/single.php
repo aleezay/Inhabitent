@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * The template for displaying all single posts.
+ *
+ * @package RED_Starter_Theme
+ */
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -7,11 +11,7 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-		<!--AJAX BUTTON-->
-
-		<button type="button" id="close-comments">Close Comments</button>
-
-			<?php get_template_part( 'template-parts/content', 'archive-product' ); ?>
+			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
 			<?php the_post_navigation(); ?>
 
