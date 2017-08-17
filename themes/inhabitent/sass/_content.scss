@@ -71,13 +71,17 @@ display: inline-block;
 
 .site-header{
 	  border-bottom: 1px solid #e1e1e1;
+		    padding: .2rem 0;
+				z-index: 5;
+				// width:100%;
+				// position: fixed;
 }
 //sidebar
 
-// .site-content{
+.site-content{
 // 	// display:flex;
 // 	// margin:0, auto;
 // 	// width: 30%;
-// 	padding-top: 50px;
+	padding-top: 50px;
 
-// }
+}

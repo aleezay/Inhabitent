@@ -455,8 +455,6 @@ textarea {
 /* Links */
 a {
   color: #248A83; }
-  a:visited {
-    color: #2f1339; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -468,12 +466,14 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
   width: 100%;
   text-transform: uppercase;
   font-size: 1rem;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  position: absolute; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -536,6 +536,32 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+.main-navigation li {
+  padding-left: 1.5rem;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-right: 0; }
+
+.top-menu-container {
+  height: 33px; }
+
+.nav-logo-container {
+  height: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: .75rem;
+  padding-left: 5rem; }
+  .nav-logo-container img {
+    height: 50px;
+    width: 50px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
+
+.nav-items-container {
+  padding-bottom: .2rem;
+  padding-right: 5rem; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -703,7 +729,12 @@ a {
   display: block; }
 
 .site-header {
-  border-bottom: 1px solid #e1e1e1; }
+  border-bottom: 1px solid #e1e1e1;
+  padding: .2rem 0;
+  z-index: 5; }
+
+.site-content {
+  padding-top: 50px; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -712,10 +743,11 @@ a {
 .front-page-hero {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.25)), url(../../images/home-hero.jpg);
   background-size: cover;
-  height: 100vh; }
+  height: 100vh;
+  position: relative; }
 
 .hero-banner-logo {
-  position: relative; }
+  position: absolute; }
 
 .site-footer {
   background-image: url(../../images/dark-wood.png);
