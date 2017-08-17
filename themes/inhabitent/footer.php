@@ -5,10 +5,8 @@
  * @package Inhabitent_Theme
  */
 ?>
-
+</div><!-- #content -->
 			<footer id="colophon" class="site-footer" role="contentinfo">
-
-				<div class="footer-flex">
 				 
 				<div class="footer-box-container">
 			
@@ -48,7 +46,7 @@
 							<div class="copyright">
 							<p>copyright &copy; <?php echo date("Y");?> Inhabitent </p>
 						</div>
-						</div>
+			
 						
 				<div class="site-info">
 					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>

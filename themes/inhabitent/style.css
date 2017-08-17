@@ -645,10 +645,9 @@ a {
   display: none; }
 
 #secondary {
-  width: 30%;
+  width: 35%;
   padding-top: 60px;
-  padding-left: 45px;
-  border-left: 1px solid #e1e1e1; }
+  padding-left: 45px; }
 
 .widget-area {
   display: block;
@@ -757,6 +756,13 @@ a {
   padding: .2rem 0;
   z-index: 999; }
 
+.site-content {
+  display: -ms-flexbox;
+  display: flex; }
+
+.articles-container {
+  border-right: 1px solid #e1e1e1; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -782,6 +788,10 @@ a {
   min-width: 1120px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+
+.footer-flex {
+  display: -ms-flexbox;
+  display: flex; }
 
 .footer-box-container {
   display: -ms-flexbox;
