@@ -11,7 +11,7 @@
 				<div class="footer-flex">
 				 
 				<div class="footer-box-container">
-			
+				
 					<div class="footer-box-item">
 						<div class="contact">
 							<h3>contact info</h3>
