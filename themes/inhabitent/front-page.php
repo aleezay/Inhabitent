@@ -15,7 +15,6 @@
   </div>
      </div>
 
-
 <div class = "most-recent-journals" >
     <?php
        $args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => 3, 'orderby' => 'date' );
@@ -41,4 +40,5 @@
        </div>
 </main>
        <?php get_footer(); ?>
+       
  

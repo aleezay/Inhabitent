@@ -1,10 +1,15 @@
 .site-footer {
   background-image: url(../../images/dark-wood.png);
   font-size: 16px;
+  max-height: 500px;
+  min-width: $site_width;
+   flex-wrap: wrap;
   // padding: 45px 80px;
 }
 .footer-box-container{
   display: flex;
+  // align-content: flex-end;
+ 
 
   // align-content: center;
 }
