@@ -13,11 +13,35 @@
 <div class="front-page-container">
   <div class="front-page-hero">
     <div class="hero-banner-logo">
- 			<img src="<?php echo get_template_directory_uri(); ?>./images/logos/inhabitent-logo-full.svg" alt="Inhabitent Camping Supply Co.">
+ 			
+    <img src="<?php echo get_template_directory_uri(); ?>./images/logos/inhabitent-logo-full.svg" alt="Inhabitent Camping Supply Co.">
   </div>
   </div>
-      
-     </div>
+      </div>
+ <!--generating shop stuff on front page     -->
+ 
+<div class="most-recent-shop-stuff">
+  <?php
+    $terms = get_terms ('product-type');
+    if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) : //var_dump($terms); ?>
+  
+      <ul class="front-page-terms">
+        <?php foreach ( $terms as $term ) : ?>
+              <li class="front-page-term">
+                <img src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg'   ?>">
+                <p><?php echo $term->description; ?></p>
+                <a href="<?php echo get_term_link( $term ); ?> "><?php echo $term->name; ?> Stuff</a>
+              </li>
+          <?php endforeach; ?>
+      </ul>
+
+<!--var dump-->
+<!--array(4) { [0]=> object(WP_Term)#786 (10) 
+{ ["term_id"]=> int(16) ["name"]=> string(2) "Do" ["slug"]=> string(2) "do" ["term_group"]=> int(0) ["term_taxonomy_id"]=> int(16) ["taxonomy"]=> string(12) "product-type" ["description"]=> string(84) "Get back to nature with all the tools and toys you need to enjoy the great outdoors." ["parent"]=> int(0) ["count"]=> int(4) ["filter"]=> string(3) "raw" } -->
+
+    <?php endif; ?>
+
+</div>
 
 <div class = "most-recent-journals" >
     <?php

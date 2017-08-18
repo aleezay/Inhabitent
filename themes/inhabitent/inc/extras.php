@@ -71,3 +71,15 @@ function inhabitent_dynamic_css() {
     wp_add_inline_style( 'tent-style', $hero_css );
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_dynamic_css' );
+
+//changing the name of products archive to shop stuff
+function inhabitent_archive_title( $title ) {
+    if ( is_post_type_archive('product') ) {
+        $title = 'Shop Stuff';
+    } elseif ( is_tax('product-type') ) {
+        $title = single_term_title( '', false );
+    }
+    return $title;
+}
+ 
+add_filter( 'get_the_archive_title', 'inhabitent_archive_title' );
