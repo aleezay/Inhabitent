@@ -46,22 +46,3 @@
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
-
-<!--
-header container
-	nav bar container
-		logo container
-			logo
-		nav items container
-			shop container
-				a
-			journal container
-				a
-			about container
-				a
-			find us container
-				a
-		searchbar container
-			search-->
-
-			

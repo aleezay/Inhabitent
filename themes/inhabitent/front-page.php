@@ -6,6 +6,8 @@
  */
 
   get_header(); ?>
+  	<div id="primary" class="content-area">
+
   <main id="main" class="site-main" role="main">
 			
 <div class="front-page-container">
@@ -36,11 +38,12 @@
                  <?php inhabitent_posted_on(); ?> /<?php comments_number( '0 Comments', '1 Comment', '% Comments'); ?>
                  <?php inhabitent_posted_by();?> 
           </div>
-          <a href=<? get_post_permalink()?>"><?php the_title(); ?></a>
+          <a href="<?php get_post_permalink() ?>"><?php the_title(); ?></a>
           </div>
        <?php endforeach; wp_reset_postdata(); ?>
        </div>
 </main>
+</div>
        <?php get_footer(); ?>
        
  
