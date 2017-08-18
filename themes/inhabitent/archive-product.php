@@ -26,7 +26,7 @@ get_header(); ?>
 				?>
 
 <!--get the product types (do, eat, sleep, wear)-->
-	<!--<div class="product-types-container">-->
+	<div class="product-types-container">
 				<?php foreach ( $product_types as $product_type ) : setup_postdata( $product_type ); ?>
 					<!--<div class="">-->
 						<a class="text-uppercase" href="<?php echo home_url() ?>
@@ -34,7 +34,7 @@ get_header(); ?>
 						<?php echo $product_type->name ?></a>
 					<!--</div>-->
 				<?php endforeach; wp_reset_postdata(); ?>
-				<!--</div>-->
+				</div>
 
 			</header><!-- .page-header -->
 
