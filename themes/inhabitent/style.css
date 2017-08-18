@@ -645,18 +645,9 @@ a {
   display: none; }
 
 #secondary {
-  width: 35%;
+  width: 375px;
   padding-top: 60px;
   padding-left: 45px; }
-
-.widget-area {
-  display: block;
-  -ms-flex-pack: right;
-      justify-content: right;
-  margin: 0, auto;
-  -ms-flex-item-align: right;
-      -ms-grid-row-align: right;
-      align-self: right; }
 
 .widget-title {
   text-transform: uppercase;
@@ -759,6 +750,9 @@ a {
 .site-content {
   display: -ms-flexbox;
   display: flex; }
+
+.site-main {
+  width: 745px; }
 
 .articles-container {
   border-right: 1px solid #e1e1e1; }
