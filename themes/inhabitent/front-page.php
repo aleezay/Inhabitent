@@ -6,35 +6,38 @@
  */
 
   get_header(); ?>
-  	<div id="primary" class="content-area">
+  <div id="primary" class="content-area">
 
-  <main id="main" class="site-main" role="main">
+     <main id="main" class="site-main" role="main">
 			
-<div class="front-page-container">
-  <div class="front-page-hero">
-    <div class="hero-banner-logo">
- 			
-    <img src="<?php echo get_template_directory_uri(); ?>./images/logos/inhabitent-logo-full.svg" alt="Inhabitent Camping Supply Co.">
-  </div>
-  </div>
-      </div>
- <!--generating shop stuff on front page     -->
+     <div class="front-page-container">
+       <div class="front-page-hero">
+         <div class="hero-banner-logo">
+             <img src="<?php echo get_template_directory_uri(); ?>./images/logos/inhabitent-logo-full.svg" alt="Inhabitent Camping Supply Co.">
+         </div>
+        </div>
+       </div>
+
+ <!--generating shop stuff on front page-->
  
-<div class="most-recent-shop-stuff">
+<div class="front-shop-section-container">
   <?php
     $terms = get_terms ('product-type');
     if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) : //var_dump($terms); ?>
-  
-      <ul class="front-page-terms">
+  <h2>Shop Stuff</h2>
+  <div class="front-shop-terms-container">
+      <div class="front-shop-terms">
         <?php foreach ( $terms as $term ) : ?>
-              <li class="front-page-term">
+        <div class="front-shop-term-wrapper">
+              <div class="front-shop-term">
                 <img src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg'   ?>">
-                <p><?php echo $term->description; ?></p>
+                <p class="front-shop-term-description"><?php echo $term->description; ?></p>
                 <a href="<?php echo get_term_link( $term ); ?> "><?php echo $term->name; ?> Stuff</a>
-              </li>
+              </div>
+              </div>
           <?php endforeach; ?>
-      </ul>
-
+      </div>
+</div>
 <!--var dump-->
 <!--array(4) { [0]=> object(WP_Term)#786 (10) 
 { ["term_id"]=> int(16) ["name"]=> string(2) "Do" ["slug"]=> string(2) "do" ["term_group"]=> int(0) ["term_taxonomy_id"]=> int(16) ["taxonomy"]=> string(12) "product-type" ["description"]=> string(84) "Get back to nature with all the tools and toys you need to enjoy the great outdoors." ["parent"]=> int(0) ["count"]=> int(4) ["filter"]=> string(3) "raw" } -->
@@ -43,7 +46,7 @@
 
 </div>
 
-<div class = "most-recent-journals" >
+<div class="front-journal-section-container" >
     <?php
        $args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => 3, 'orderby' => 'date' );
        $journal_posts = get_posts( $args ); // returns an array of post

@@ -104,6 +104,8 @@ wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/993f311164.js', a
 
 add_action( 'wp_enqueue_scripts', 'inhabitent_scripts' );
 
+wp_enqueue_script( 'inhabitent', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+
 /**
  * Custom template tags for this theme.
  */

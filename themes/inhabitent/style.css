@@ -767,18 +767,62 @@ body:not(.home) .site-content {
   width: 1120px; }
 
 /* Front page */
+/*Banner*/
 .front-page-hero {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../images/home-hero.jpg);
   background-size: cover;
   height: 100vh;
   position: relative;
   z-index: 2; }
+  .front-page-hero .hero-banner-logo img {
+    position: absolute;
+    padding-left: 30.8rem;
+    padding-top: 10.5rem;
+    display: block;
+    margin: auto;
+    -ms-flex-pack: center;
+        justify-content: center; }
 
-.hero-banner-logo {
-  position: absolute;
-  height: 20rem;
-  width: 20rem; }
+/*Shop Stuff Section*/
+.front-shop-section-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+  .front-shop-section-container h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 3.75rem; }
 
+.front-shop-terms {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  text-align: center;
+  margin: 0 0 1.5rem 3rem; }
+  .front-shop-terms .front-shop-term img {
+    height: 70px;
+    width: 70px; }
+  .front-shop-terms .front-shop-term-wrapper {
+    border: 1px solid #e1e1e1;
+    margin: .75rem; }
+  .front-shop-terms .front-shop-term {
+    padding: .75rem;
+    padding-bottom: 1.2rem; }
+    .front-shop-terms .front-shop-term a {
+      background-color: #248a83;
+      color: white;
+      font-size: .9rem;
+      line-height: 1;
+      padding: .75rem 1.5rem;
+      text-decoration: none;
+      text-transform: uppercase; }
+
+.front-shop-term-description {
+  color: black; }
+
+/* Front Page Journal Section*/
 .site-footer {
   background-image: url(../../images/dark-wood.png);
   font-size: 16px;
