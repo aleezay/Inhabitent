@@ -24,23 +24,26 @@
 			<div class="top-menu-container">
 
 				<div class="site-branding">
-					<h1 class="site-title screen-reader-text"></h1>									
+					<h1 class="site-title screen-reader-text"></h1>				
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div class="nav-logo-container">
 						<img src=<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-tent.svg alt="Inhabitent logo"/></a>
 					</div>
+
+<div class="my-nav-search"><i class="fa fa-search"></i></div>	
+
 					<div class="nav-items-container">
+
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 					<?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+	
+		<!--<php get_search_form(); add question marks in here> -->
+		
 					</div>
-				</nav><!-- #site-navigation -->
-
-		<!--ADD SEARCH FORM!!!-->
-
-			<!---<i class="fa fa-search"></i>-->
+				</nav><!-- #site-navigation -->			
 
 				</div><!--front-menu-container-->
 			</header><!-- #masthead -->

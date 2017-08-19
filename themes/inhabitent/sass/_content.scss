@@ -7,6 +7,11 @@
 // 	flex: 1,0, auto;
 // }
 
+.content-area {
+	// flex: 1;
+	width:100%;
+}
+
 .sticky {
 	display: block;
 }
@@ -106,36 +111,16 @@ padding:1rem 1.5rem;
 				// width:100%;
 				// position: fixed;
 }
-// .sidebar
-// .body{
-// 	&:not(.home){
-// 		.site-content{
-// 	display:flex;
-// 	// margin:0, auto, 0, auto;
-// 	margin-left: auto;
-//   margin-right: auto;
-// 	width: 1120px;
 
-// 	// padding-top: 50px;
-// 		}
-// 	}
-// }
 
 .site-content{
 	display:flex;
 	// margin:0, auto, 0, auto;
-	margin-left: auto;
-  margin-right: auto;
-	width: 1120px;
+	// margin-left: auto;
+  // margin-right: auto;
 }
 
-// .site-main{
-// 	width: 745px;
-// }
 
-.content-area {
-	flex: 1;
-}
 
 //JOURNAL 
 .articles-container{

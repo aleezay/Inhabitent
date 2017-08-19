@@ -83,3 +83,8 @@ function inhabitent_archive_title( $title ) {
 }
  
 add_filter( 'get_the_archive_title', 'inhabitent_archive_title' );
+
+// function get_search_form( $echo = true ) {
+    
+//     add_action( 'pre_get_search_form' );
+ 

@@ -1,6 +1,20 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+body{
+
+	&:not(.home){
+		.site-content{
+	display:flex;
+	// margin:0, auto, 0, auto;
+	margin-left: auto;
+  margin-right: auto;
+	width: 1120px;
+
+	// padding-top: 50px;
+		}
+}
+}
 
 /* Front page */
 .front-page-hero {
@@ -8,16 +22,14 @@
  background-size: cover;
  height:100vh;
  position: relative;
- z-index: 2;
-
- 
+ z-index: 2; 
 }
 .hero-banner-logo{
   position: absolute;
   height: 20rem;
   width: 20rem;
-   margin-left:30rem;
-  margin-top: 12rem; 
+  //  margin-left:30rem;
+  // margin-top: 12rem; 
   // display:block;
   //  margin:auto;
   //   width:100%
