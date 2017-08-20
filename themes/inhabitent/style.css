@@ -268,7 +268,7 @@ code, kbd, tt, var {
   font-size: 0.9375rem; }
 
 abbr, acronym {
-  border-bottom: 1px dotted #666;
+  border-bottom: 1px dotted #667;
   cursor: help; }
 
 mark, ins {
@@ -712,7 +712,7 @@ a {
   display: inline-block;
   padding: 1rem 1.5rem; }
 
-.entry-title {
+.blog .entry-title {
   display: -ms-flexbox;
   display: flex;
   background-color: #248A83;
@@ -721,12 +721,12 @@ a {
   top: 0;
   margin-top: 2.25rem;
   max-width: 75%; }
-  .entry-title a {
+  .blog .entry-title a {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 2rem; }
-    .entry-title a:hover {
+    .blog .entry-title a:hover {
       color: #fff9c0; }
 
 .entry-content p {
@@ -759,12 +759,15 @@ a {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-body:not(.home) .site-content {
+body:not(.home):not(.page-template-about):not(.single-product) :not(.tax-product-type) .site-content {
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 1120px; }
+
+.blog .content-area {
+  width: 73%; }
 
 /* Front page */
 /*Banner*/
@@ -783,35 +786,36 @@ body:not(.home) .site-content {
     -ms-flex-pack: center;
         justify-content: center; }
 
-/*Shop Stuff Section*/
-.front-shop-section-container {
+/*front page sections */
+.front-section-container {
   margin-left: auto;
   margin-right: auto;
   width: 1120px; }
-  .front-shop-section-container h2 {
+  .front-section-container h2 {
     text-transform: uppercase;
     text-align: center;
     font-size: 2.4rem;
     margin-bottom: 3.75rem; }
 
+.front-grey-wrapper {
+  border: 1px solid #e1e1e1;
+  margin: .75rem; }
+
+/*Shop Stuff Section*/
 .front-shop-terms {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  text-align: center;
-  margin: 0 0 1.5rem 3rem; }
+  text-align: center; }
   .front-shop-terms .front-shop-term img {
     height: 70px;
     width: 70px; }
-  .front-shop-terms .front-shop-term-wrapper {
-    border: 1px solid #e1e1e1;
-    margin: .75rem; }
   .front-shop-terms .front-shop-term {
     padding: .75rem;
     padding-bottom: 1.2rem; }
-    .front-shop-terms .front-shop-term a {
-      background-color: #248a83;
+    .front-shop-terms .front-shop-term .green-button a {
+      background-color: #248A83;
       color: white;
       font-size: .9rem;
       line-height: 1;
@@ -823,6 +827,110 @@ body:not(.home) .site-content {
   color: black; }
 
 /* Front Page Journal Section*/
+.front-journals {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  text-align: center; }
+
+.front-journal-text a {
+  color: #248A83;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.3rem; }
+
+/*About Page*/
+.custom-hero {
+  height: 100vh; }
+
+.about-entry-title {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 16rem;
+  font-size: 3rem;
+  margin: 0; }
+
+.post-5 .entry-content {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  font-size: 1rem; }
+
+.page-template-about h2 {
+  text-align: center;
+  color: #2f1339;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem; }
+
+/*Find Us Page*/
+.page-id-7 .content-area {
+  width: 73%;
+  border-right: 1px solid #e1e1e1;
+  padding-right: 5%;
+  padding-top: 2%; }
+
+.entry-title {
+  text-transform: uppercase; }
+
+.entry-content h2 {
+  text-transform: uppercase;
+  font-size: 2rem; }
+
+.post-7 .content-area {
+  margin: 0; }
+
+.post-7 .site-content {
+  border-right: 1px solid #e1e1e1; }
+
+.wpcf7-form .wpcf7-submit {
+  background: #248A83;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  font-size: 14.4px;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: none;
+  text-shadow: none;
+  margin-bottom: 5rem; }
+
+.star {
+  color: #d99054; }
+
+.wpcf7-form-control {
+  background: #f1f1f1; }
+
+/*Shop Page*/
+h1.page-title {
+  text-transform: uppercase;
+  text-align: center; }
+
+.product-types-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: pink; }
+
+.product-type-container {
+  background-color: blue;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.text-uppercase {
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 0;
+  padding-left: 0; }
+
 .site-footer {
   background-image: url(../../images/dark-wood.png);
   font-size: 16px;

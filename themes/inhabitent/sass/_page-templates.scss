@@ -1,86 +1,229 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-body{
 
-	&:not(.home){
-		.site-content{
-	display:flex;
-	// margin:0, auto, 0, auto;
-	margin-left: auto;
-  margin-right: auto;
-	width: 1120px;
+body {
+    &:not(.home):not(.page-template-about):not(.single-product) // :not(.post-type-archive)
+     :not(.tax-product-type) {
+        .site-content {
+            display: flex; // margin:0, auto; y u no werk?
+            margin-left: auto;
+            margin-right: auto;
+            width: 1120px;
+        } // padding-top: 50px;
+    }
+}
 
-	// padding-top: 50px;
-		}
+.blog .content-area {
+    width: 73%;
 }
-}
+
 
 /* Front page */
 
+
 /*Banner*/
+
 .front-page-hero {
- background-image: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),url(../../images/home-hero.jpg);
- background-size: cover;
- height:100vh;
- position: relative;
- z-index: 2; 
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .4) 0, rgba(0, 0, 0, .4)), url(../../images/home-hero.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
     .hero-banner-logo {
-         img{
-         position: absolute;
-         padding-left: 30.8rem;
-         padding-top: 10.5rem; 
-         //  margin-left:30rem;
-         // margin-top: 12rem; 
-         display:block;
-         margin:auto;
-         justify-content: center;
-         }
-    } 
+        img {
+            position: absolute;
+            padding-left: 30.8rem;
+            padding-top: 10.5rem; //  margin-left:30rem;
+            // margin-top: 12rem; 
+            display: block;
+            margin: auto;
+            justify-content: center;
+        }
+    }
 }
 
-/*Shop Stuff Section*/
-.front-shop-section-container {
+/*front page sections */
+
+.front-section-container {
     margin-left: auto;
     margin-right: auto;
     width: 1120px;
-    
-      h2{
-       text-transform: uppercase;
-       text-align: center;
-       font-size: 2.4rem;
-       margin-bottom: 3.75rem;
-}
-      }     
-      .front-shop-terms {
-        display:flex;
-        justify-content: space-between;
+    h2 {
+        text-transform: uppercase;
         text-align: center;
-        margin: 0 0 1.5rem 3rem;
-          .front-shop-term img{
-            height: 70px;
-            width: 70px;
-  }
-.front-shop-term-wrapper{
-    border: 1px solid #e1e1e1;
+        font-size: 2.4rem;
+        margin-bottom: 3.75rem;
+    }
+}
+.front-grey-wrapper {
+    border: $solid_border;
     margin: .75rem;
 }
-   .front-shop-term {
-     padding: .75rem;
-       padding-bottom: 1.2rem;
-  
-   a {
-      background-color: #248a83;
-      color:white;
-      font-size: .9rem;
-      line-height: 1;
-      padding: .75rem 1.5rem;
-      text-decoration: none;
-      text-transform: uppercase;
-      }
-}}
-.front-shop-term-description {
-  color:black;
+
+
+/*Shop Stuff Section*/
+
+.front-shop-terms {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    .front-shop-term img {
+        height: 70px;
+        width: 70px;
+    }
+    .front-shop-term {
+        padding: .75rem;
+        padding-bottom: 1.2rem;
+        .green-button a {
+            background-color: $color_brand-green;
+            color: white;
+            font-size: .9rem;
+            line-height: 1;
+            padding: .75rem 1.5rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
 }
-    
+
+.front-shop-term-description {
+    color: black;
+}
+
+
 /* Front Page Journal Section*/
+
+.front-journals {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.front-journal-text a {
+    color: $color_brand-green;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+
+/*About Page*/
+
+// hero image
+.custom-hero {
+    height: 100vh;
+}
+
+.about-entry-title {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 16rem;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.post-5 .entry-content {
+    //  margin:4rem, 10rem; why isn't this working??
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    margin-left: 10rem;
+    margin-right: 10rem; //  width: 70%;
+    font-size: 1rem;
+}
+
+.page-template-about h2 {
+    text-align: center;
+    color: $color_brand-purple;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+
+/*Find Us Page*/
+
+.page-id-7 .content-area {
+    width: 73%;
+    border-right: 1px solid #e1e1e1;
+    padding-right: 5%;
+    padding-top: 2%;
+}
+
+.entry-title {
+    text-transform: uppercase;
+}
+
+.entry-content h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.post-7 .content-area {
+    margin: 0;
+}
+
+.post-7 .site-content {
+    border-right: $solid_border; // margin-bottom: 5rem;
+}
+
+.wpcf7-form .wpcf7-submit {
+    background: $color_brand-green;
+    border: none;
+    border-radius: 0;
+    color: #fff; // font-family: Novecento Sans Web, sans-serif;
+    font-size: 14.4px;
+    font-size: .9rem;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: none;
+    text-shadow: none;
+    margin-bottom: 5rem;
+}
+
+.star {
+    color: $color_brand-orange;
+    ;
+}
+
+.wpcf7-form-control {
+    background: $color__background-screen;
+}
+
+
+/*Shop Page*/
+
+h1.page-title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+// .taxonomy-description{
+//    text-transform: uppercase;
+//   text-align: center;
+// }
+.product-types-container {
+    display: flex;
+    // justify-content: space-between;
+    align-content: center;
+    background-color: pink;
+}
+.product-type-container{
+  background-color: blue;
+  justify-content: space-between;
+}
+
+.text-uppercase {
+    //  display:inline-flex;
+    text-transform: uppercase; 
+    text-align: center;
+    text-decoration: none; 
+     margin-left: 0;
+     padding-left: 0;
+    // justify-content: space-between;
+}
+
+//LOOK UP display: grid that cora was talking about (4 x 1)?

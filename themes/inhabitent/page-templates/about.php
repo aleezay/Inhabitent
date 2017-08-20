@@ -10,11 +10,11 @@ get_header(); ?>
       <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <header class="entry-header custom-hero">
           <div class="container">
-              <?php the_title( '<h1 class="entry-title">', '</h1>');?>
+              <?php the_title( '<h1 class="about-entry-title">', '</h1>');?>
           </div>
         </header>
 
-        <div class="about-content-container">
+        <div class="front-section-container">
           <div class="entry-content">
             <h2>Our Story</h2>
             <?php echo CFS()->get( 'about_our_story' ); ?>

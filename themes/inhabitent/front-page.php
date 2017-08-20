@@ -20,7 +20,7 @@
 
  <!--generating shop stuff on front page-->
  
-<div class="front-shop-section-container">
+<div class="front-section-container">
   <?php
     $terms = get_terms ('product-type');
     if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) : //var_dump($terms); ?>
@@ -28,11 +28,13 @@
   <div class="front-shop-terms-container">
       <div class="front-shop-terms">
         <?php foreach ( $terms as $term ) : ?>
-        <div class="front-shop-term-wrapper">
+        <div class="front-grey-wrapper">
               <div class="front-shop-term">
                 <img src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg'   ?>">
                 <p class="front-shop-term-description"><?php echo $term->description; ?></p>
+                <div class="green-button">
                 <a href="<?php echo get_term_link( $term ); ?> "><?php echo $term->name; ?> Stuff</a>
+                </div>
               </div>
               </div>
           <?php endforeach; ?>
@@ -46,14 +48,19 @@
 
 </div>
 
-<div class="front-journal-section-container" >
+<div class="front-section-container">
+  <h2>Inhabitent Journal</h2>
+   <div class="front-journals-container">
     <?php
        $args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => 3, 'orderby' => 'date' );
        $journal_posts = get_posts( $args ); // returns an array of post
       ?>
+     
+      <div class="front-journals">
        <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
       
        <div class="journal-recent-block-item">
+         <div class="front-grey-wrapper">
           <div class="journal-thumbnail-wrapper">
       
           <?php if (has_post_thumbnail ()):?>
@@ -61,14 +68,36 @@
              <?php endif; ?>
              </div>
       
-               <div class= "entry-meta">
+               <div class="entry-meta">
                  <?php inhabitent_posted_on(); ?> /<?php comments_number( '0 Comments', '1 Comment', '% Comments'); ?>
                  <?php inhabitent_posted_by();?> 
           </div>
+          <div class="front-journal-text">
           <a href="<?php get_post_permalink() ?>"><?php the_title(); ?></a>
+          </div>
+          </div>
           </div>
        <?php endforeach; wp_reset_postdata(); ?>
        </div>
+        </div>
+
+<!--Adventures-->
+<div class="front-section-container">
+  <h2>Latest Adventures</h2>
+ <div class="adventures-left-right">
+ <div class="left">
+<h3 class="adventures-text"> Getting Back to Nature in a Canoe</h3>
+<a class="white-read-button">Read More</a>
+</div>
+
+<div class="mountain"</div>
+<div class="beach"</div>
+<div class="nature-sky"</div>
+
+
+
+
+</div>
 </main>
 </div>
        <?php get_footer(); ?>
