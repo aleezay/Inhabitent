@@ -16,31 +16,16 @@
 }
 
 /* Search widget. */
-.widget_search .search-submit {
-	display: none;
-}
+// .widget_search .search-submit {
+// 	// display: none;
+// }
 
 // SIDEBAR
 
 #secondary{
-
  padding-top: 60px;
  padding-left: 45px;
-//  margin:0, auto;
 }
-
-// .sidebar-container{
-// 	display: flex;
-// }
-
-// .widget-area {
-// 	display:block;
-// 	justify-content: right;
-// 	margin:0, auto;
-// 	align-self: right;
-
-	// width: 30%;
-// }
 
 .widget-title{
 	text-transform: uppercase;
@@ -72,9 +57,3 @@
 	}
 	}
 }
-
-// <aside id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>		<ul>
-// 			<li><a href="//localhost:3000/Inhabitent/2016/04/">April 2016</a></li>
-// 	<li><a href="//localhost:3000/Inhabitent/2016/03/">March 2016</a></li>
-// 		</ul>
-// 		</aside>

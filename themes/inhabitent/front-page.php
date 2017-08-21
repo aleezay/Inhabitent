@@ -82,22 +82,34 @@
         </div>
 
 <!--Adventures-->
-<div class="front-section-container">
+<section class="front-section-container">
+  <div class="">
   <h2>Latest Adventures</h2>
  <div class="adventures-left-right">
  <div class="left">
+   <div class="adventures-container-canoe">
 <h3 class="adventures-text"> Getting Back to Nature in a Canoe</h3>
 <a class="white-read-button">Read More</a>
 </div>
-
-<div class="mountain"</div>
-<div class="beach"</div>
-<div class="nature-sky"</div>
-
-
-
-
 </div>
+<div class="right">
+   <div class="adventures-container-beach">
+     <h3 class="adventures-text"> A Night with Friends at the Beach</h3>
+<a class="white-read-button">Read More</a>
+</div>
+<div class="adventures-container-mountain">
+     <h3 class="adventures-text"> Taking in the View at Big Mountain</h3>
+<a class="white-read-button">Read More</a>
+</div>
+<div class="adventures-container-sky">
+     <h3 class="adventures-text"> Star-Gazing at the Night Sky</h3>
+<a class="white-read-button">Read More</a>
+</div>
+</div>
+<a>More Adventures</a>
+</div>
+	   </div><!--front-section-container-->
+</section>
 </main>
 </div>
        <?php get_footer(); ?>

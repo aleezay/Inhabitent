@@ -641,9 +641,6 @@ a {
     max-width: 100%; }
 
 /* Search widget. */
-.widget_search .search-submit {
-  display: none; }
-
 #secondary {
   padding-top: 60px;
   padding-left: 45px; }
@@ -724,7 +721,7 @@ a {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-body:not(.home):not(.page-template-about):not(.single-product) :not(.tax-product-type) .site-content {
+body:not(.home):not(.page-template-about) :not(.tax-product-type) .site-content {
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
@@ -838,8 +835,9 @@ body:not(.home):not(.page-template-about):not(.single-product) :not(.tax-product
   padding-right: 5%;
   padding-top: 2%; }
 
-.entry-title {
-  text-transform: uppercase; }
+.archive .entry-title {
+  font-size: 1rem;
+  font-weight: 400; }
 
 .entry-content h2 {
   text-transform: uppercase;
@@ -877,6 +875,12 @@ h1.page-title {
   text-transform: uppercase;
   text-align: center; }
 
+.archive .entry-content p {
+  display: none;
+  font-size: 0.00000001px;
+  z-index: 5;
+  margin: 0; }
+
 .taxonomy-description p {
   font-size: 1rem;
   text-align: center;
@@ -911,18 +915,62 @@ h1.page-title {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 25px;
-  grid-column-gap: 30px; }
+  grid-column-gap: 30px;
+  margin-bottom: 3rem; }
   .product-display .product-display-item {
     height: 300px;
-    overflow: hidden;
-    margin-bottom: 95px; }
+    border: 1px solid #e1e1e1;
+    overflow: hidden; }
     .product-display .product-display-item img {
-      height: 250px; }
-    .product-display .product-display-item .entry-title a {
-      font-size: 1rem;
-      text-decoration: none;
-      color: black;
-      padding-top: 0; }
+      height: 250px;
+      object-fit: cover;
+      border-bottom: 5px solid #e1e1e1;
+      padding-bottom: 0;
+      margin-bottom: 0; }
+  .product-display .product-display-item .entry-title a {
+    display: none;
+    text-align: center;
+    font-size: 0.00000001px;
+    z-index: 1;
+    margin: 0; }
+
+.price {
+  z-index: 999;
+  color: black;
+  font-size: 1rem;
+  text-align: center; }
+
+.archive .entry-content,
+.archive .hentry,
+.archive .entry-title {
+  margin: 0; }
+
+/*single product*/
+.single-product .content-area {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.single-product .entry-title a {
+  color: #d99054;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2.4rem;
+  margin-bottom: .5rem; }
+
+.single-product .entry-title p {
+  font-size: 1rem;
+  margin-bottom: .5rem; }
+
+.type-product {
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
+  .type-product .entry-content {
+    width: 48%;
+    padding-left: 2rem; }
+
+.type-product.entry-title {
+  width: 48%;
+  display: block; }
 
 /*Journal Page*/
 .blog .entry-header {
@@ -937,7 +985,8 @@ h1.page-title {
 .articles-container {
   margin-right: 75px;
   padding-top: 50px;
-  width: 750px; }
+  width: 750px;
+  max-width: 75%; }
 
 .blog .entry-meta {
   background-color: #248A83;
@@ -950,7 +999,7 @@ h1.page-title {
   padding-left: 1.2rem;
   padding-right: 1.2rem; }
 
-.entry-title {
+.blog .entry-title {
   display: -ms-flexbox;
   display: flex;
   background-color: #248A83;
@@ -961,12 +1010,12 @@ h1.page-title {
   margin-top: 2.25rem;
   max-width: 75%;
   line-height: 1.25; }
-  .entry-title a {
+  .blog .entry-title a {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 2rem; }
-    .entry-title a:hover {
+    .blog .entry-title a:hover {
       color: #fff9c0; }
 
 .entry-content p {
@@ -1022,3 +1071,30 @@ p {
     .copyright-container .copyright p {
       text-transform: uppercase;
       margin: 0; }
+
+.adventures-container-canoe {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../images/adventure-photos/canoe-girl.jpg);
+  left: 50%;
+  max-height: 620px;
+  max-width: none;
+  position: absolute;
+  width: auto; }
+
+.adventures-container-beach {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../images/adventure-photos/beach-bonfire.jpg);
+  height: 100%;
+  height: 100%; }
+
+.adventures-container-mountain {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../images/adventure-photos/mountain-hikers.jpg);
+  height: 100%;
+  height: 100%; }
+
+.adventures-container-sky {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../images/adventure-photos/night-sky.jpg);
+  height: 100%;
+  width: 100%; }
+
+.adventures-text {
+  color: white;
+  text-transform: none; }

@@ -34,7 +34,7 @@ get_header(); ?>
 						<a class="text-uppercase" href="<?php echo home_url() ?>
 						/product-type/<?php echo $product_type->slug ?>">
 						<?php echo $product_type->name ?></a>
-						
+												          
 				</div>
 				<?php endforeach; wp_reset_postdata(); ?>
 				</div>
@@ -44,19 +44,27 @@ get_header(); ?>
 <div class="product-display">
 
 			<?php while ( have_posts() ) : the_post(); ?>
+
 <div class="product-display-item">
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
-			
+	<a href=<?php echo get_post_permalink() ?>><?php	get_template_part( 'template-parts/content' );?></a>
+
+
+<!--<div class="price-container">-->
+	<div class="price">
+<span><?php the_title(); ?></span> 
+<span>................</span>
+<span><?php echo CFS()->get( 'price' ); ?></span>
+			</div>
+			<!--</div>-->
 </div>
+
 			<?php endwhile; ?>
 </div>
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>-->
+			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?> 
 
