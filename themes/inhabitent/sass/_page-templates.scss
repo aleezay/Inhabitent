@@ -1,275 +1,334 @@
-        /*--------------------------------------------------------------
+            /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
 
-body {
-    &:not(.home):not(.page-template-about):not(.single-product) // :not(.post-type-archive)
-     :not(.tax-product-type) {
-        .site-content {
-            display: flex; // margin:0, auto; y u no werk?
+        body {
+            &:not(.home):not(.page-template-about):not(.single-product) // :not(.post-type-archive)
+             :not(.tax-product-type) {
+                .site-content {
+                    display: flex; // margin:0, auto; y u no werk?
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 1120px;
+                } // padding-top: 50px;
+            }
+        }
+
+        .blog .content-area {
+            width: 73%;
+        }
+        /* Front page */
+        /*Banner*/
+
+        .front-page-hero {
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, .4) 0, rgba(0, 0, 0, .4)), url(../../images/home-hero.jpg);
+            background-size: cover;
+            height: 100vh;
+            position: relative;
+            z-index: 2;
+            .hero-banner-logo {
+                img {
+                    position: absolute;
+                    padding-left: 30.8rem;
+                    padding-top: 10.5rem; //  margin-left:30rem;
+                    // margin-top: 12rem; 
+                    display: block;
+                    margin: auto;
+                    justify-content: center;
+                }
+            }
+        }
+        /*front page sections */
+
+        .front-section-container {
             margin-left: auto;
             margin-right: auto;
             width: 1120px;
-        } // padding-top: 50px;
-    }
-}
-
-.blog .content-area {
-    width: 73%;
-}
-
-
-/* Front page */
-
-
-/*Banner*/
-
-.front-page-hero {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, .4) 0, rgba(0, 0, 0, .4)), url(../../images/home-hero.jpg);
-    background-size: cover;
-    height: 100vh;
-    position: relative;
-    z-index: 2;
-    .hero-banner-logo {
-        img {
-            position: absolute;
-            padding-left: 30.8rem;
-            padding-top: 10.5rem; //  margin-left:30rem;
-            // margin-top: 12rem; 
-            display: block;
-            margin: auto;
-            justify-content: center;
+            h2 {
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 2.4rem;
+                margin-bottom: 3.75rem;
+            }
         }
-    }
-}
 
+        .front-grey-wrapper {
+            border: $solid_border;
+            margin: .75rem;
+        }
+        /*Shop Stuff Section*/
 
-/*front page sections */
+        .front-shop-terms {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            .front-shop-term img {
+                height: 70px;
+                width: 70px;
+            }
+            .front-shop-term {
+                padding: .75rem;
+                padding-bottom: 1.2rem;
+                .green-button a {
+                    background-color: $color_brand-green;
+                    color: white;
+                    font-size: .9rem;
+                    line-height: 1;
+                    padding: .75rem 1.5rem;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+            }
+        }
 
-.front-section-container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1120px;
-    h2 {
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 2.4rem;
-        margin-bottom: 3.75rem;
-    }
-}
+        .front-shop-term-description {
+            color: black;
+        }
+        /* Front Page Journal Section*/
 
-.front-grey-wrapper {
-    border: $solid_border;
-    margin: .75rem;
-}
+        .front-journals {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
 
+        .front-journal-text a {
+            color: $color_brand-green;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+        }
+        /*About Page*/
 
-/*Shop Stuff Section*/
+        // hero image
+        .custom-hero {
+            height: 100vh;
+        }
 
-.front-shop-terms {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    .front-shop-term img {
-        height: 70px;
-        width: 70px;
-    }
-    .front-shop-term {
-        padding: .75rem;
-        padding-bottom: 1.2rem;
-        .green-button a {
-            background-color: $color_brand-green;
+        .about-entry-title {
             color: white;
+            text-align: center;
+            text-transform: uppercase;
+            padding-top: 16rem;
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .post-5 .entry-content {
+            //  margin:4rem, 10rem; why isn't this working??
+            margin-top: 3.5rem;
+            margin-bottom: 3.5rem;
+            margin-left: 10rem;
+            margin-right: 10rem; //  width: 70%;
+            font-size: 1rem;
+        }
+
+        .page-template-about h2 {
+            text-align: center;
+            color: $color_brand-purple;
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        /*Find Us Page*/
+
+        .page-id-7 .content-area {
+            width: 73%;
+            border-right: 1px solid #e1e1e1;
+            padding-right: 5%;
+            padding-top: 2%;
+        }
+
+        .entry-title {
+            text-transform: uppercase;
+        }
+
+        .entry-content h2 {
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+
+        .post-7 .content-area {
+            margin: 0;
+        }
+
+        .post-7 .site-content {
+            border-right: $solid_border; // margin-bottom: 5rem;
+        }
+
+        .wpcf7-form .wpcf7-submit {
+            background: $color_brand-green;
+            border: none;
+            border-radius: 0;
+            color: #fff; // font-family: Novecento Sans Web, sans-serif;
+            font-size: 14.4px;
             font-size: .9rem;
             line-height: 1;
             padding: .75rem 1.5rem;
             text-decoration: none;
             text-transform: uppercase;
+            box-shadow: none;
+            text-shadow: none;
+            margin-bottom: 5rem;
         }
-    }
-}
 
-.front-shop-term-description {
-    color: black;
-}
+        .star {
+            color: $color_brand-orange;
+            ;
+        }
 
+        .wpcf7-form-control {
+            background: $color__background-screen;
+        }
+        /*Shop Page*/
 
-/* Front Page Journal Section*/
+        h1.page-title {
+            text-transform: uppercase;
+            text-align: center;
+        }
 
-.front-journals {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
+        .taxonomy-description p {
+            font-size: 1rem;
+            text-align: center;
+            color: $color__text-main; //   line-height: 1.75;
+        } // .product-type-wrap{
+        // }
+        .product-types-container {
+            display: flex;
+            align-content: center;
+            justify-content: space-around;
+            width: 350px;
+            margin-left: 24rem;
+        }
 
-.front-journal-text a {
-    color: $color_brand-green;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-}
+        .product-type-container {
+            // background-color: blue;
+            // justify-content: space-between;
+        }
 
+        .text-uppercase {
+            //  display:inline-flex;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin-left: 0;
+            padding-left: 0; // justify-content: space-between;
+        }
 
-/*About Page*/
+        .page-header {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: $dashed_border;
+        }
 
-// hero image
-.custom-hero {
-    height: 100vh;
-}
-
-.about-entry-title {
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 16rem;
-    font-size: 3rem;
-    margin: 0;
-}
-
-.post-5 .entry-content {
-    //  margin:4rem, 10rem; why isn't this working??
-    margin-top: 3.5rem;
-    margin-bottom: 3.5rem;
-    margin-left: 10rem;
-    margin-right: 10rem; //  width: 70%;
-    font-size: 1rem;
-}
-
-.page-template-about h2 {
-    text-align: center;
-    color: $color_brand-purple;
-    font-size: 2rem;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-}
-
-
-/*Find Us Page*/
-
-.page-id-7 .content-area {
-    width: 73%;
-    border-right: 1px solid #e1e1e1;
-    padding-right: 5%;
-    padding-top: 2%;
-}
-
-.entry-title {
-    text-transform: uppercase;
-}
-
-.entry-content h2 {
-    text-transform: uppercase;
-    font-size: 2rem;
-}
-
-.post-7 .content-area {
-    margin: 0;
-}
-
-.post-7 .site-content {
-    border-right: $solid_border; // margin-bottom: 5rem;
-}
-
-.wpcf7-form .wpcf7-submit {
-    background: $color_brand-green;
-    border: none;
-    border-radius: 0;
-    color: #fff; // font-family: Novecento Sans Web, sans-serif;
-    font-size: 14.4px;
-    font-size: .9rem;
-    line-height: 1;
-    padding: .75rem 1.5rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    box-shadow: none;
-    text-shadow: none;
-    margin-bottom: 5rem;
-}
-
-.star {
-    color: $color_brand-orange;
-    ;
-}
-
-.wpcf7-form-control {
-    background: $color__background-screen;
-}
-
-
-/*Shop Page*/
-
-h1.page-title {
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.taxonomy-description p{
-  font-size: 1rem;
-  text-align: center;
-  color: $color__text-main;
-//   line-height: 1.75;
-}
-// .product-type-wrap{
-// }
-.product-types-container {
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-    width: 350px;
-    margin-left: 24rem;
-}
-
-.product-type-container {
-    // background-color: blue;
-    // justify-content: space-between;
-}
-
-.text-uppercase {
-    //  display:inline-flex;
-    text-transform: uppercase;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.2rem;
-    margin-left: 0;
-    padding-left: 0; // justify-content: space-between;
-}
-
-.page-header {
-    margin-bottom: 40px;
-    padding-bottom: 40px;
-    border-bottom: $dashed_border;
-}
-
-.product-display {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 25px;
-    grid-column-gap: 30px;
-    // margin-bottom: 3rem;
-    
-    .product-display-item {
-            height: 300px;
-            // border: $solid_border;
-            // border-bottom: 5px solid #e1e1e1;
-            overflow: hidden;
-            // margin-top: 0;
-            // padding-top: 0;
-            margin-bottom: 95px;
-            img {
-                height: 250px;
-                // width: auto;
-                // object-fit: cover;
-                // padding-bottom:0;
-                // margin-bottom: 0;
-            }
-             .entry-title a{
-                font-size:1rem;
-                text-decoration: none;
-                // align-content: center;
-                 color: black;
-                 padding-top:0;
+        .product-display {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-row-gap: 25px;
+            grid-column-gap: 30px; // margin-bottom: 3rem;
+            .product-display-item {
+                height: 300px; // border: $solid_border;
+                // border-bottom: 5px solid #e1e1e1;
+                overflow: hidden; // margin-top: 0;
+                // padding-top: 0;
+                margin-bottom: 95px;
+                img {
+                    height: 250px; // width: auto;
+                    // object-fit: cover;
+                    // padding-bottom:0;
+                    // margin-bottom: 0;
                 }
-          
+                .entry-title a {
+                    font-size: 1rem;
+                    text-decoration: none; // align-content: center;
+                    color: black;
+                    padding-top: 0;
+                }
             }
-            }
+        }
+        /*Journal Page*/
 
+        .blog .entry-header {
+            position: relative;
+            img {
+                // width: 760px;
+                // height: 520px;
+                // position: relative;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .blog .site-main {
+            border-right: $solid_border;
+        }
+
+        .articles-container {
+            // display: flex;
+            // max-width: 75%;
+            margin-right: 75px;
+            padding-top: 50px;
+            width: 750px; //     padding-right: 5%;
+            //     max-width: 75%;
+            // background-color: pink;
+        }
+
+        .blog .entry-meta {
+            background-color: $color_brand-green;
+            text-transform: uppercase;
+            color: white; // position: absolute;
+            display: inline-block;
+            position: absolute;
+            bottom: 8px;
+            right: 0;
+            padding-left: 1.2rem;
+            padding-right: 1.2rem;
+        }
+
+        .entry-title {
+            display: flex;
+            background-color: $color_brand-green;
+            padding: 1rem 1.5rem; // position: absolute; //this makes all the titles overlap at the top
+            position: absolute;
+            left: 0;
+            top: 0; // margin-top:15px;
+            margin-top: 2.25rem;
+            max-width: 75%;
+            line-height: 1.25;
+            a {
+                color: white;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 2rem;
+                &:hover {
+                    color: $color__background-ins;
+                }
+            }
+        }
+
+        .entry-content p {
+            color: $color__text-main;
+        }
+
+//         .post-template-default .site-main{
+//  margin-left: auto;
+//                     margin-right: auto;
+//                     width: 1120px;}
+
+        // .post-template-default .single-post .content-area {
+        //     // background-color: turquoise;
+        //     width: 73%;
+        // }
+
+        // .single-post .single-post .entry-meta {
+        //     background-color: $color_brand-green;
+        //     text-transform: uppercase;
+        //     color: white; // position: absolute;
+        //     display: inline-block;
+        //     position: absolute;
+        //     bottom: 8px;
+        //     right: 0;
+        //     padding-left: 1.2rem;
+        //     padding-right: 1.2rem;
+        // }
