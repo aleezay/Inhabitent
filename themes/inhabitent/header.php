@@ -32,7 +32,7 @@
 						<img src=<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-tent.svg alt="Inhabitent logo"/></a>
 					</div>
 
-<div class="my-nav-search"><i class="fa fa-search"></i></div>	
+<!--<div class="my-nav-search"><i class="fa fa-search"></i></div>	-->
 
 					<div class="nav-items-container">
 

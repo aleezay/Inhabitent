@@ -83,33 +83,43 @@
 
 <!--Adventures-->
 <section class="front-section-container">
-  <div class="">
+
   <h2>Latest Adventures</h2>
- <div class="adventures-left-right">
- <div class="left">
-   <div class="adventures-container-canoe">
+ <!--<div class="adventures-left-right">-->
+ <!--<div class="left">-->
+     <ul class="adventures">
+   <li class="adventures-container-canoe">
 <h3 class="adventures-text"> Getting Back to Nature in a Canoe</h3>
 <a class="white-read-button">Read More</a>
-</div>
-</div>
-<div class="right">
-   <div class="adventures-container-beach">
+</li>
+<!--</ul>-->
+<!--</div>left-->
+<!--<div class="right">-->
+   <!--<ul class="adventures">-->
+   <li class="adventures-container-beach">
      <h3 class="adventures-text"> A Night with Friends at the Beach</h3>
 <a class="white-read-button">Read More</a>
-</div>
-<div class="adventures-container-mountain">
+</li>
+
+<div class="small-squares">
+<li class="adventures-container-mountain">
      <h3 class="adventures-text"> Taking in the View at Big Mountain</h3>
 <a class="white-read-button">Read More</a>
-</div>
-<div class="adventures-container-sky">
+</li>
+<li class="adventures-container-sky">
      <h3 class="adventures-text"> Star-Gazing at the Night Sky</h3>
 <a class="white-read-button">Read More</a>
+</li>
 </div>
+</ul>
+
+<!--</div>right-->
+<div class="green-button-container">
+<a class="green-button">More Adventures</a>
 </div>
-<a>More Adventures</a>
-</div>
-	   </div><!--front-section-container-->
-</section>
+<!--</div>adventures-left-right-->
+	</section>  <!--front-section-container-->
+
 </main>
 </div>
        <?php get_footer(); ?>
