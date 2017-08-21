@@ -25,14 +25,15 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
+			<div class="product-display">
 			<?php while ( have_posts() ) : the_post(); ?>
-
+<div class="product-display-item">
 				<?php
 					get_template_part( 'template-parts/content' );
 				?>
-
+</div>
 			<?php endwhile; ?>
-
+</div>
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
@@ -44,5 +45,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<!--<?php get_sidebar(); ?>-->
 <?php get_footer(); ?>

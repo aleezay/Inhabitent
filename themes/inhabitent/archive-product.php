@@ -26,27 +26,32 @@ get_header(); ?>
 				?>
 
 <!--get the product types (do, eat, sleep, wear)-->
-	<div class="product-types-container">
+<!--<div class="product-types-wrap">-->
+
+<div class="product-types-container">
 				<?php foreach ( $product_types as $product_type ) : setup_postdata( $product_type ); ?>
 					<div class="product-type-container">
 						<a class="text-uppercase" href="<?php echo home_url() ?>
 						/product-type/<?php echo $product_type->slug ?>">
 						<?php echo $product_type->name ?></a>
-					</div>
+						
+				</div>
 				<?php endforeach; wp_reset_postdata(); ?>
 				</div>
 
+<!--</div>-->
 			</header><!-- .page-header -->
+<div class="product-display">
 
-						<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
+<div class="product-display-item">
 				<?php
 					get_template_part( 'template-parts/content' );
 				?>
-
+			
+</div>
 			<?php endwhile; ?>
-
+</div>
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>

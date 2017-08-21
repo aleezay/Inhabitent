@@ -912,24 +912,52 @@ h1.page-title {
   text-transform: uppercase;
   text-align: center; }
 
+.taxonomy-description p {
+  font-size: 1rem;
+  text-align: center;
+  color: #404040; }
+
 .product-types-container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
-  background-color: pink; }
-
-.product-type-container {
-  background-color: blue;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 350px;
+  margin-left: 24rem; }
 
 .text-uppercase {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+  font-size: 1.2rem;
   margin-left: 0;
   padding-left: 0; }
+
+.page-header {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px dashed #c8c8c8; }
+
+.product-display {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 25px;
+  grid-column-gap: 30px; }
+  .product-display .product-display-item {
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 95px; }
+    .product-display .product-display-item img {
+      height: 250px; }
+    .product-display .product-display-item .entry-title a {
+      font-size: 1rem;
+      text-decoration: none;
+      color: black;
+      padding-top: 0; }
 
 .site-footer {
   background-image: url(../../images/dark-wood.png);

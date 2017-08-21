@@ -1,4 +1,4 @@
-/*--------------------------------------------------------------
+        /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
 
@@ -43,6 +43,7 @@ body {
     }
 }
 
+
 /*front page sections */
 
 .front-section-container {
@@ -56,6 +57,7 @@ body {
         margin-bottom: 3.75rem;
     }
 }
+
 .front-grey-wrapper {
     border: $solid_border;
     margin: .75rem;
@@ -201,29 +203,73 @@ h1.page-title {
     text-align: center;
 }
 
-// .taxonomy-description{
-//    text-transform: uppercase;
-//   text-align: center;
+.taxonomy-description p{
+  font-size: 1rem;
+  text-align: center;
+  color: $color__text-main;
+//   line-height: 1.75;
+}
+// .product-type-wrap{
 // }
 .product-types-container {
     display: flex;
-    // justify-content: space-between;
     align-content: center;
-    background-color: pink;
+    justify-content: space-around;
+    width: 350px;
+    margin-left: 24rem;
 }
-.product-type-container{
-  background-color: blue;
-  justify-content: space-between;
+
+.product-type-container {
+    // background-color: blue;
+    // justify-content: space-between;
 }
 
 .text-uppercase {
     //  display:inline-flex;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     text-align: center;
-    text-decoration: none; 
-     margin-left: 0;
-     padding-left: 0;
-    // justify-content: space-between;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: 0;
+    padding-left: 0; // justify-content: space-between;
 }
 
-//LOOK UP display: grid that cora was talking about (4 x 1)?
+.page-header {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: $dashed_border;
+}
+
+.product-display {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 25px;
+    grid-column-gap: 30px;
+    // margin-bottom: 3rem;
+    
+    .product-display-item {
+            height: 300px;
+            // border: $solid_border;
+            // border-bottom: 5px solid #e1e1e1;
+            overflow: hidden;
+            // margin-top: 0;
+            // padding-top: 0;
+            margin-bottom: 95px;
+            img {
+                height: 250px;
+                // width: auto;
+                // object-fit: cover;
+                // padding-bottom:0;
+                // margin-bottom: 0;
+            }
+             .entry-title a{
+                font-size:1rem;
+                text-decoration: none;
+                // align-content: center;
+                 color: black;
+                 padding-top:0;
+                }
+          
+            }
+            }
+
