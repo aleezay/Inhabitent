@@ -85,7 +85,7 @@
 <section class="front-section-container">
 
   <h2>Latest Adventures</h2>
- <!--<div class="adventures-left-right">-->
+ <div class="adventures-left-right">
  <!--<div class="left">-->
      <ul class="adventures">
    <li class="adventures-container-canoe">
@@ -117,7 +117,7 @@
 <div class="green-button-container">
 <a class="green-button">More Adventures</a>
 </div>
-<!--</div>adventures-left-right-->
+</div><!--adventures-left-right-->
 	</section>  <!--front-section-container-->
 
 </main>

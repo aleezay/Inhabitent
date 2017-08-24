@@ -4,6 +4,7 @@
  body {
      &:not(.home):not(.page-template-about)
     //  :not(.single-product) // :not(.post-type-archive)
+    
       :not(.tax-product-type) {
          .site-content {
              display: flex; // margin:0, auto; y u no werk?
@@ -89,12 +90,23 @@
      justify-content: space-between;
      text-align: center;
  }
- .front-journal-text a {
+ .front-journal-text {
      color: $color_brand-green;
-     text-decoration: none;
      text-transform: uppercase;
      font-size: 1.3rem;
      font-family: $font_accent;
+     margin-bottom: 3.75rem;
+     a {  
+         text-decoration: none;
+     }
+    
+ }
+
+ .journal-thumbnail-wrapper{
+     .img{
+         width:100%;
+        //  height:250;
+     }
  }
 .page-template-default .entry-title{
     text-transform: uppercase;
@@ -333,10 +345,10 @@
       padding-left: 1.2rem;
       padding-right: 1.2rem;
   }
-  .blog .entry-title {
+  .blog .entry-title, .post-template-default .entry-title {
       display: flex;
       background-color: $color_brand-green;
-      padding: 1rem 1.5rem; // position: absolute; //this makes all the titles overlap at the top
+      padding: 1rem 1.5rem;
       position: absolute;
       left: 0;
       top: 0; // margin-top:15px;
@@ -353,24 +365,51 @@
           }
       }
   }
+
+// Single Posts Page
+  .post-template-default .site-content .content-area {
+    border-right: 1px solid #e1e1e1;
+    padding-right: 5%;
+    padding-top: 5%;
+    width: 73%;
+  }
   .entry-content p {
       color: $color__text-main;
-  } //         .post-template-default .site-main{
-  //  margin-left: auto;
-  //                     margin-right: auto;
-  //                     width: 1120px;}
-  // .post-template-default .single-post .content-area {
-  //     // background-color: turquoise;
-  //     width: 73%;
-  // }
-  // .single-post .single-post .entry-meta {
-  //     background-color: $color_brand-green;
-  //     text-transform: uppercase;
-  //     color: white; // position: absolute;
-  //     display: inline-block;
-  //     position: absolute;
-  //     bottom: 8px;
-  //     right: 0;
-  //     padding-left: 1.2rem;
-  //     padding-right: 1.2rem;
-  // }
+  } //         
+  .post-template-default .entry-header{
+      img{
+          height: auto;
+          width: 100vw;
+      }
+  }
+  .post-template-default .entry-meta {
+      background-color: $color_brand-green;
+      text-transform: uppercase;
+      color: white; // position: absolute;
+      display: inline-block;
+      position: absolute;
+      bottom: 5px;
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
+    //   .comments-link a {
+    //       color: white;
+    //   }
+  }
+  .post-template-default .entry-title {
+      display: flex;
+      background-color: $color_brand-green;
+      padding: 1rem 1.5rem; // position: absolute; //this makes all the titles overlap at the top
+      position: absolute;
+      left: 4.5rem;
+      top: 0; // margin-top:15px;
+      margin-top: 12rem;
+      max-width: 45%;
+      line-height: 1.25;
+          color: white;
+          text-transform: uppercase;
+          text-decoration: none;
+          font-size: 2rem;
+          &:hover {
+              color: $color__background-ins;
+      }
+  }

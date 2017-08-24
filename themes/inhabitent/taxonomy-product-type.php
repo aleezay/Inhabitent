@@ -29,7 +29,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 <div class="product-display-item">
 				<?php
-					get_template_part( 'template-parts/content' );
+					get_template_part( 'template-parts/taxonomy', 'products' );
 				?>
 </div>
 			<?php endwhile; ?>
