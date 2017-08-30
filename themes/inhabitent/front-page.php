@@ -67,7 +67,7 @@
              <?php the_post_thumbnail ('medium'); ?></a>
              <?php endif; ?>
              </div>
-      
+      <div class="entry-meta-wrapper">
                <div class="entry-meta">
                  <?php inhabitent_posted_on(); ?> /<?php comments_number( '0 Comments', '1 Comment', '% Comments'); ?>
                  <?php inhabitent_posted_by();?> 
@@ -75,6 +75,11 @@
           <div class="front-journal-text">
           <a href="<?php get_post_permalink() ?>"><?php the_title(); ?></a>
           </div>
+         <div class="black-button-read-cont">
+            <a href="#" class="read-more-front">Read Entry</a>
+            </div>
+</div>
+
           </div>
           </div>
        <?php endforeach; wp_reset_postdata(); ?>
@@ -85,39 +90,39 @@
 <section class="front-section-container">
 
   <h2>Latest Adventures</h2>
- <div class="adventures-left-right">
- <!--<div class="left">-->
+ <div class="all-adventures">
+ <div class="left">
      <ul class="adventures">
    <li class="adventures-container-canoe">
 <h3 class="adventures-text"> Getting Back to Nature in a Canoe</h3>
-<a class="white-read-button">Read More</a>
+<a href="#" class="white-read-button">Read More</a>
 </li>
-<!--</ul>-->
-<!--</div>left-->
-<!--<div class="right">-->
-   <!--<ul class="adventures">-->
+</ul>
+<div class="green-button-container">
+<a href="#" class="green-button">More Adventures</a>
+</div>
+</div>
+<div class="right">
+   <ul class="adventures">
    <li class="adventures-container-beach">
      <h3 class="adventures-text"> A Night with Friends at the Beach</h3>
-<a class="white-read-button">Read More</a>
+<a href="#" class="white-read-button">Read More</a>
 </li>
 
 <div class="small-squares">
 <li class="adventures-container-mountain">
      <h3 class="adventures-text"> Taking in the View at Big Mountain</h3>
-<a class="white-read-button">Read More</a>
+<a href="#" class="white-read-button">Read More</a>
 </li>
 <li class="adventures-container-sky">
      <h3 class="adventures-text"> Star-Gazing at the Night Sky</h3>
-<a class="white-read-button">Read More</a>
+<a href="#" class="white-read-button">Read More</a>
 </li>
 </div>
 </ul>
 
-<!--</div>right-->
-<div class="green-button-container">
-<a class="green-button">More Adventures</a>
 </div>
-</div><!--adventures-left-right-->
+</div><!--all-adventures-->
 	</section>  <!--front-section-container-->
 
 </main>

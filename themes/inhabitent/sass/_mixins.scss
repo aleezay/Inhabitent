@@ -1,12 +1,56 @@
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
-	font-size: ($sizeValue * 16) * 1px;
-	font-size: $sizeValue * 1rem;
+    font-size: ($sizeValue * 16) * 1px;
+    font-size: $sizeValue * 1rem;
 }
 
 // Center block
 @mixin center-block {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin green-button {
+	    color: #fff;
+    padding: .5rem;
+		text-decoration: none;
+    font-family: $font_accent;
+    text-transform: uppercase;
+    justify-content: flex-end;
+    background-color: $color-brand-green;
+    &:hover {
+			background-color: #20635e;
+        // background-color: $color_brand_yellow;
+    }
+}
+
+@mixin white-button {
+    color: white;
+    text-transform: uppercase;
+    border: 1px, solid, white;
+    border-radius: 0;
+    background-color: transparent;
+    padding: .75rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-family: $font_accent;
+    &:hover {
+        background-color: $color_brand_green;
+    }
+}
+
+@mixin black-button {
+    color: $color_brand-purple;
+    text-transform: uppercase;
+    border: 1px, solid, $color_brand-purple;
+    border-radius: 0;
+    background-color: transparent;
+    padding: .75rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-family: $font_accent;
+    &:hover {
+        background-color: $color_brand_green;
+    }
 }

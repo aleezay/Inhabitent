@@ -51,11 +51,34 @@
          font-weight: 400;
              letter-spacing: 2px;
      }
+.green-button-container{
+@include green-button;
+ align-self: flex-end;
+ margin-bottom:3rem;
+ margin-top: 2rem;
+ width: 45%;
+ a{
+     color:white;
+     text-decoration: none;
+     padding-left: 35px;
  }
+}
+ }
+
  .front-grey-wrapper {
      border: $solid_border;
-     margin: .75rem;
+     border-top: 5px solid #e1e1e1; 
+      margin: .75rem;
  }
+  .front-shop-terms{
+      .front-grey-wrapper { 
+     &:hover{
+         border: 1px solid #d99054;
+         border-top: 5px solid #d99054; 
+     }
+
+      }}
+    
  /*Shop Stuff Section*/
  .front-shop-terms {
      display: flex;
@@ -68,6 +91,9 @@
      .front-shop-term {
          padding: .75rem;
          padding-bottom: 1.2rem;
+         width:258px;
+         height:262px;
+         
          .green-button a {
              background-color: $color_brand-green;
              color: white;
@@ -80,9 +106,28 @@
          }
      }
  }
+
+ .journal-recent-block-item{
+     .front-grey-wrapper{
+         width:340px;
+         height: 415px;
+        img{
+            width:100vw;
+            height:245px;
+            border-bottom: 5px solid #e1e1e1;
+        }
+        .entry-meta{
+                font-size: .75rem;
+                text-align: left;
+        }
+     }
+ }
  .front-shop-term-description {
      color: black;
-     font-size: .9rem;
+     font-family: Merriweather Web,serif;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.75;
  }
  /* Front Page Journal Section*/
  .front-journals {
@@ -91,18 +136,38 @@
      text-align: center;
  }
  .front-journal-text {
+     text-align: left;
      color: $color_brand-green;
      text-transform: uppercase;
      font-size: 1.3rem;
-     font-family: $font_accent;
-     margin-bottom: 3.75rem;
+     line-height: 1.25;
+   font-family: Novecento Sans Web,sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    //  font-family: $font_accent;
+    //  margin-bottom: 3.75rem;
      a {  
          text-decoration: none;
      }
-    
+         
  }
 
+ .black-button-read-cont{
+      margin-top: 1rem;
+        //   text-align:left;
+     align-self:left;
+        margin-bottom:.3rem;
+      align-self:left;
+ .read-more-front{
+         text-decoration:none;
+          @include black-button;
+        //  flex-wrap: wrap;
+        // align-content: flex-end;
+        // align-self: left, baseline;
+     }}
+
  .journal-thumbnail-wrapper{
+     padding-bottom: 10px;
      .img{
          width:100%;
         //  height:250;
@@ -110,9 +175,10 @@
  }
 .page-template-default .entry-title{
     text-transform: uppercase;
-   
-
 }
+      .entry-meta-wrapper{
+     padding:10px;
+ }
  /*About Page*/
  // hero image
  .custom-hero {
@@ -290,26 +356,6 @@
     font-size: 1rem;
     margin-bottom: .5rem;
 }
-// .single img{
-//     // height: auto;
-//     width:535px;
-// }
-// .single-product-image{
-//     background-color: orange;
-// }
-
-// .type-product{
-//     display:inline-flex;
-//     .entry-content{
-// width: 48%;
-// padding-left: 2rem;
-    // }
-   
-// }
-//  .type-product.entry-title{
-//         width: 48%;
-//      display: block;
-//     }
 
  /*Journal Page*/
  .blog .entry-header {
@@ -328,10 +374,10 @@
  .articles-container {
      // display: flex;
      // max-width: 75%;
-     margin-right: 75px;
+     margin-right: 25px;
      padding-top: 50px;
      width: 750px; //     padding-right: 5%;
-  max-width: 75%;
+     max-width: 93%;
       // background-color: pink;
   }
   .blog .entry-meta {
@@ -398,10 +444,10 @@
   .post-template-default .entry-title {
       display: flex;
       background-color: $color_brand-green;
-      padding: 1rem 1.5rem; // position: absolute; //this makes all the titles overlap at the top
+      padding: 1rem 1.5rem; 
       position: absolute;
       left: 4.5rem;
-      top: 0; // margin-top:15px;
+      top: 0; 
       margin-top: 12rem;
       max-width: 45%;
       line-height: 1.25;
@@ -413,3 +459,39 @@
               color: $color__background-ins;
       }
   }
+.cat-links, .tags-links{
+    display: inline-block;
+    font-family: Novecento Sans Web,sans-serif;
+    text-transform: uppercase
+}
+.fn{
+    font-style: normal;
+    font-weight: 700;
+}
+.comment-list li{
+    border-bottom: $solid_border;
+    padding-top: 20px;
+}
+.comment-list p{
+    color:$color_brand-purple;
+}
+.comment-author-avatar{
+    display:inline;
+}
+
+label {
+    color: $color_brand-purple;
+    display: block;
+    font-family: "Novecento Sans Web", sans-serif;
+    font-size: 17.6px;
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+}
+
+.form-star{
+    color:$color_brand-orange;
+}
+// .post-a-comment{
+
+// }
