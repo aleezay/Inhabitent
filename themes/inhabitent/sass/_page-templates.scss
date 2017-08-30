@@ -527,7 +527,7 @@ label {
     font-family: Novecento Sans Web,sans-serif;
     letter-spacing: 2px;
     border-bottom: $solid-border;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 }
 .entry-title{
     a{
@@ -539,4 +539,25 @@ label {
 .entry-summary p{
     color: $color_brand-purple;
 }
-  
+.search .content-area{
+    width:73%;
+    border-right: $solid-border;
+        padding-right: 5%;
+    padding-top: 2%;
+}
+.search-pagination {
+    border-top: $solid-border;
+    font-family: $font_accent;
+    padding: 1.5rem 0;
+    text-transform: uppercase;
+    .page-numbers{
+    background-color: $color_brand-green;
+    color: white;
+    line-height: 1;
+    padding: .5rem .75rem;
+    margin-right: .25rem;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    }
+    }

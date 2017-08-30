@@ -189,16 +189,36 @@ input[type="search"]::-webkit-search-decoration {
 
 fieldset {
 	border: none;
-	display: flex;
-	// margin: 0 2px;
-	// padding: 0.35em 0.625em 0.75em;
+	 width: 4rem;
+    display: inline;
 	.search-submit{
 		border:none;
 		box-shadow:none;
 		background-color: transparent;
 		font-size: 1.2rem;
 		flex-direction:row;
+		padding:0;
 	}
+}
+
+.search-form label{
+	    display: inline;
+}
+// .nav-search .search-toggle{
+// 	width: 5rem;
+// 	transition:1s;
+// }
+//search nav
+.nav-search .search-field{
+	width:0;
+	   transition: all 1s ease-out;
+		margin-bottom: 1rem;
+
+}
+
+.fa-search{
+	color:$color_brand-green;
+	padding-bottom:3rem;
 }
 
 legend {

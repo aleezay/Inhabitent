@@ -34,10 +34,12 @@
 
 <!--<div class="my-nav-search"><i class="fa fa-search"></i></div>	-->
 
-	<div class="nav-items-container">
+					<div class="nav-items-container">
+
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 	<div class="nav-search">
-		
 		<?php get_search_form();?>
 		</div>
 					</div>

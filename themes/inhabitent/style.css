@@ -198,15 +198,28 @@ input[type="search"]::-webkit-search-decoration {
 
 fieldset {
   border: none;
-  display: -ms-flexbox;
-  display: flex; }
+  width: 4rem;
+  display: inline; }
   fieldset .search-submit {
     border: none;
     box-shadow: none;
     background-color: transparent;
     font-size: 1.2rem;
     -ms-flex-direction: row;
-        flex-direction: row; }
+        flex-direction: row;
+    padding: 0; }
+
+.search-form label {
+  display: inline; }
+
+.nav-search .search-field {
+  width: 0;
+  transition: all 1s ease-out;
+  margin-bottom: 1rem; }
+
+.fa-search {
+  color: #248A83;
+  padding-bottom: 3rem; }
 
 legend {
   border: 0;
@@ -456,22 +469,6 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
-.nav-search .search-field {
-  width: 0;
-  transition: .7s;
-  -ms-flex-direction: row;
-      flex-direction: row; }
-
-.nav-search .search-toggle {
-  width: 5rem; }
-
-.nav-search .search-field {
-  width: 0;
-  transition: .7s; }
-
-.fa-search {
-  color: #248A83; }
-
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -592,7 +589,8 @@ a {
   padding-right: 5rem;
   height: 33px;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  width: 40%; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1227,7 +1225,7 @@ label {
   font-family: Novecento Sans Web,sans-serif;
   letter-spacing: 2px;
   border-bottom: 1px solid #e1e1e1;
-  padding-bottom: 3rem; }
+  padding-bottom: 1rem; }
 
 .entry-title a {
   text-decoration: none;
@@ -1236,6 +1234,27 @@ label {
 
 .entry-summary p {
   color: #2f1339; }
+
+.search .content-area {
+  width: 73%;
+  border-right: 1px solid #e1e1e1;
+  padding-right: 5%;
+  padding-top: 2%; }
+
+.search-pagination {
+  border-top: 1px solid #e1e1e1;
+  font-family: "Novecento Sans Web", sans-serif;
+  padding: 1.5rem 0;
+  text-transform: uppercase; }
+  .search-pagination .page-numbers {
+    background-color: #248A83;
+    color: white;
+    line-height: 1;
+    padding: .5rem .75rem;
+    margin-right: .25rem;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none; }
 
 .site-footer {
   background-image: url(../../images/dark-wood.png);
