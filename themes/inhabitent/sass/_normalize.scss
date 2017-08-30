@@ -185,10 +185,20 @@ input[type="search"]::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
 
+
+
 fieldset {
-	border: 1px solid #c0c0c0;
-	margin: 0 2px;
-	padding: 0.35em 0.625em 0.75em;
+	border: none;
+	display: flex;
+	// margin: 0 2px;
+	// padding: 0.35em 0.625em 0.75em;
+	.search-submit{
+		border:none;
+		box-shadow:none;
+		background-color: transparent;
+		font-size: 1.2rem;
+		flex-direction:row;
+	}
 }
 
 legend {

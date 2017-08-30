@@ -61,3 +61,21 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+
+//search nav
+.nav-search .search-field{
+	width:0;
+	transition: .7s;
+	flex-direction: row;
+}
+.nav-search .search-toggle{
+	width: 5rem;
+}
+//search nav
+.nav-search .search-field{
+	width:0;
+	transition: .7s;
+}
+.fa-search{
+	color:$color_brand-green;
+}

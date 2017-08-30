@@ -197,9 +197,16 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  border: none;
+  display: -ms-flexbox;
+  display: flex; }
+  fieldset .search-submit {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    -ms-flex-direction: row;
+        flex-direction: row; }
 
 legend {
   border: 0;
@@ -448,6 +455,22 @@ input[type="search"] {
 textarea {
   padding-left: 3px;
   width: 100%; }
+
+.nav-search .search-field {
+  width: 0;
+  transition: .7s;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.nav-search .search-toggle {
+  width: 5rem; }
+
+.nav-search .search-field {
+  width: 0;
+  transition: .7s; }
+
+.fa-search {
+  color: #248A83; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -1103,6 +1126,7 @@ h1.page-title {
     .blog .entry-title a:hover, .post-template-default .entry-title a:hover {
       color: #fff9c0; }
 
+/* Single Posts Page */
 .post-template-default .site-content .content-area {
   border-right: 1px solid #e1e1e1;
   padding-right: 5%;
@@ -1174,6 +1198,44 @@ label {
 
 .form-star {
   color: #d99054; }
+
+/*Single Product Page*/
+.single-product-description-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .single-product-description-container .entry-header {
+    display: -ms-flexbox;
+    display: flex; }
+    .single-product-description-container .entry-header img {
+      height: 400px;
+      width: 538px; }
+    .single-product-description-container .entry-header h2 {
+      height: 55px; }
+
+.entry-content p {
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 1px; }
+
+/*Search Results Page*/
+.search-page-title {
+  font-size: 2.4rem;
+  font-family: Novecento Sans Web,sans-serif;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 3rem; }
+
+.entry-title a {
+  text-decoration: none;
+  font-size: 2.1rem;
+  line-height: 1.25; }
+
+.entry-summary p {
+  color: #2f1339; }
 
 .site-footer {
   background-image: url(../../images/dark-wood.png);

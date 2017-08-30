@@ -197,7 +197,7 @@
      margin-top: 3.5rem;
      margin-bottom: 3.5rem;
      margin-left: 10rem;
-     margin-right: 10rem; //  width: 70%;
+     margin-right: 10rem;
      font-size: 1rem;
  }
  .page-template-about h2 {
@@ -412,7 +412,7 @@
       }
   }
 
-// Single Posts Page
+/* Single Posts Page */
   .post-template-default .site-content .content-area {
     border-right: 1px solid #e1e1e1;
     padding-right: 5%;
@@ -492,6 +492,51 @@ label {
 .form-star{
     color:$color_brand-orange;
 }
-// .post-a-comment{
 
-// }
+
+/*Single Product Page*/
+.single-product-description-container{
+    display:flex;
+       flex-direction: row;
+       flex-wrap:wrap;
+    .entry-header{
+        display:flex;
+        img{
+            height:400px;
+            width: 538px;
+        }   
+        h2{
+            height:55px;
+        }
+    }
+    
+    }
+   .entry-content{
+        p{
+        display:flex;
+        // position: absolute;
+        // width:550px;
+        margin-right: 1px;
+    }
+   }
+
+/*Search Results Page*/
+
+.search-page-title{
+    font-size: 2.4rem;
+    font-family: Novecento Sans Web,sans-serif;
+    letter-spacing: 2px;
+    border-bottom: $solid-border;
+    padding-bottom: 3rem;
+}
+.entry-title{
+    a{
+        text-decoration: none;
+            font-size: 2.1rem;
+            line-height: 1.25;
+    }
+}
+.entry-summary p{
+    color: $color_brand-purple;
+}
+  
