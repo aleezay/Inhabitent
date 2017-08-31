@@ -153,39 +153,32 @@
    font-family: Novecento Sans Web,sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
-    //  font-family: $font_accent;
-    //  margin-bottom: 3.75rem;
      a {  
          text-decoration: none;
      }
          
  }
 
- .black-button-read-cont{
-      margin-top: 1rem;
-        //   text-align:left;
+ .black-button-read-cont {
+     margin-top: 1rem;
      align-self:left;
-        margin-bottom:.3rem;
-      align-self:left;
- .read-more-front{
+     margin-bottom:.3rem;
+     align-self:left;
+ .read-more-front {
          text-decoration:none;
           @include black-button;
-        //  flex-wrap: wrap;
-        // align-content: flex-end;
-        // align-self: left, baseline;
      }}
 
- .journal-thumbnail-wrapper{
+ .journal-thumbnail-wrapper {
      padding-bottom: 10px;
-     .img{
+     .img {
          width:100%;
-        //  height:250;
      }
  }
-.page-template-default .entry-title{
+.page-template-default .entry-title {
     text-transform: uppercase;
 }
-      .entry-meta-wrapper{
+      .entry-meta-wrapper {
      padding:10px;
  }
  /*About Page*/
@@ -202,7 +195,6 @@
      margin: 0;
  }
  .post-5 .entry-content {
-     //  margin:4rem, 10rem; why isn't this working??
      margin-top: 3.5rem;
      margin-bottom: 3.5rem;
      margin-left: 10rem;
@@ -216,9 +208,12 @@
      text-transform: uppercase;
      margin-bottom: 1rem;
      font-family: $font_accent;
-         font-weight: 400;
-             letter-spacing: 2px;
+     font-weight: 400;
+     letter-spacing: 2px;
  }
+ .entry-header custom-hero {
+     background-size: cover;
+}
  /*Find Us Page*/
  
  .archive .entry-title {
@@ -229,8 +224,8 @@
      text-transform: uppercase;
      font-size: 2rem;
      font-family: $font_accent;
-         font-weight: 400;
-             letter-spacing: 2px;
+     font-weight: 400;
+     letter-spacing: 2px;
  }
  .post-7 .content-area {
      margin: 0;
@@ -278,9 +273,8 @@
  .taxonomy-description p {
      font-size: 1rem;
      text-align: center;
-     color: $color__text-main; //   line-height: 1.75;
- } // .product-type-wrap{
- // }
+     color: $color__text-main; 
+ }
  .product-types-container {
      display: flex;
      align-content: center;
@@ -289,13 +283,12 @@
      margin-left: 24rem;
  }
  .text-uppercase {
-     //  display:inline-flex;
      text-transform: uppercase;
      text-align: center;
      text-decoration: none;
      font-size: 1.2rem;
      margin-left: 0;
-     padding-left: 0; // justify-content: space-between;
+     padding-left: 0; 
      font-family: $font_accent;
  }
  .page-header {
@@ -314,7 +307,6 @@
          border: $solid_border;
          overflow: hidden;
          img {
-             // display:none;
              height: 250px;
              object-fit: cover;
              border-bottom: 5px solid #e1e1e1;
@@ -333,9 +325,7 @@
  .price {
      z-index: 999;
      color: black;
-     font-size: 1rem; // display: inline-flex;
-     // padding-top: 0;
-     // margin-top: 0;
+     font-size: 1rem; 
      text-align: center;
  }
  .archive .entry-content,
@@ -346,7 +336,7 @@
 
 /*single product*/
 .single-product .content-area{
-        padding-top: 3rem;
+    padding-top: 3rem;
     padding-bottom: 3rem;
 }
 .single-product .entry-title a{
@@ -365,9 +355,6 @@
  .blog .entry-header {
      position: relative;
      img {
-         // width: 760px;
-         // height: 520px;
-         // position: relative;
          width: 100%;
          height: 100%;
      }
@@ -376,18 +363,15 @@
      border-right: $solid_border;
  }
  .articles-container {
-     // display: flex;
-     // max-width: 75%;
      margin-right: 25px;
      padding-top: 50px;
-     width: 750px; //     padding-right: 5%;
+     width: 750px; 
      max-width: 93%;
-      // background-color: pink;
   }
   .blog .entry-meta {
       background-color: $color_brand-green;
       text-transform: uppercase;
-      color: white; // position: absolute;
+      color: white;
       display: inline-block;
       position: absolute;
       bottom: 8px;
@@ -401,7 +385,7 @@
       padding: 1rem 1.5rem;
       position: absolute;
       left: 0;
-      top: 0; // margin-top:15px;
+      top: 0; 
       margin-top: 2.25rem;
       max-width: 75%;
       line-height: 1.25;
@@ -435,15 +419,12 @@
   .post-template-default .entry-meta {
       background-color: $color_brand-green;
       text-transform: uppercase;
-      color: white; // position: absolute;
+      color: white; 
       display: inline-block;
       position: absolute;
       bottom: 5px;
       padding-left: 1.2rem;
       padding-right: 1.2rem;
-    //   .comments-link a {
-    //       color: white;
-    //   }
   }
   .post-template-default .entry-title {
       display: flex;
@@ -455,12 +436,12 @@
       margin-top: 12rem;
       max-width: 45%;
       line-height: 1.25;
-          color: white;
-          text-transform: uppercase;
-          text-decoration: none;
-          font-size: 2rem;
-          &:hover {
-              color: $color__background-ins;
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 2rem;
+      &:hover {
+          color: $color__background-ins;
       }
   }
 .cat-links, .tags-links{
@@ -500,9 +481,9 @@ label {
 
 /*Single Product Page*/
 .single-product .hentry{
-        display: flex;
-        justify-content: space-between;
-        .entry-title {
+    display: flex;
+    justify-content: space-between;
+    .entry-title {
     color: #d99054;
     font-size:2.4rem;
     margin: 0;
@@ -522,22 +503,22 @@ label {
             height:400px;
             width: 538px;
         }   
-        h2{
+        h2 {
             height:55px;
         }
     }
-    }
-   .entry-content{
-width:45%;
-.BodyA{
-    font-size: 1rem;
-    line-height: 1.25;
 }
+   .entry-content {
+        width:45%;
+            .BodyA {
+                font-size: 1rem;
+                line-height: 1.25;
+            }
    }
 
 /*Search Results Page*/
 
-.search-page-title{
+.search-page-title {
     font-size: 2.4rem;
     font-family: Novecento Sans Web,sans-serif;
     letter-spacing: 2px;
@@ -546,16 +527,15 @@ width:45%;
 }
 .entry-title{
     a{
-        text-decoration: none;
-            font-size: 2.1rem;
-            line-height: 1.25;
+    text-decoration: none;
+    font-size: 2.1rem;
+    line-height: 1.25;
     }
 }
-.entry-summary p{
+.entry-summary p {
     color: $color_brand-purple;
 }
-.search .content-area
-{
+.search .content-area {
     width:73%;
     border-right: $solid-border;
     padding-right: 5%;
@@ -566,16 +546,16 @@ width:45%;
     font-family: $font_accent;
     padding: 1.5rem 0;
     text-transform: uppercase;
-    .page-numbers{
-    background-color: $color_brand-green;
-    color: white;
-    line-height: 1;
-    padding: .5rem .75rem;
-    margin-right: .25rem;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    }
+        .page-numbers {
+            background-color: $color_brand-green;
+            color: white;
+            line-height: 1;
+            padding: .5rem .75rem;
+            margin-right: .25rem;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            }
     }
 
 //error page
@@ -585,20 +565,22 @@ width:45%;
         margin:0;
         padding:0;
     }
-    .page-title{
+    .page-title {
         font-size: 2.4rem;
             letter-spacing: 2px;
     }
-    .page-content{
-        p{color:black;}
+    .page-content {
+        p {
+            color:black;
+        }
     }
-    }
+}
 
-.error404 .site-content .search-submit{
+.error404 .site-content .search-submit {
     display:none;
     color:white;
 }
 
-.widget.widget_recent_entries a{
+.widget.widget_recent_entries a {
     text-decoration:none;
 }

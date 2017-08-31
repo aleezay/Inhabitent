@@ -15,11 +15,6 @@
 	}
 }
 
-/* Search widget. */
-// .widget_search .search-submit {
-// 	// display: none;
-// }
-
 // SIDEBAR
 
 #secondary{
@@ -34,11 +29,11 @@
 
 .contact-meta, #archives-2 {
 	color: black;
-	a{
-		color: $color_brand-green;
-		text-decoration: none;
-		  &:hover {
-			  color: black;		
+		a {
+			color: $color_brand-green;
+			text-decoration: none;
+			  &:hover {
+				  color: black;		
 		}
 	}
 }
@@ -51,9 +46,10 @@
 }
 
 .inhabitent-business-hours-class {
-	p {color:black;
-	.day-of-week{
-		font-weight: 700;
-	}
-	}
+	p {
+		color:black;
+			.day-of-week {
+				font-weight: 700;
+			}
+	 }
 }

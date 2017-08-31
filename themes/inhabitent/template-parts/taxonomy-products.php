@@ -12,7 +12,6 @@
 			<?php if ( has_post_thumbnail() ) : ?>
 			<a href=<?php echo get_post_permalink() ?>>
 				<?php the_post_thumbnail( 'large' ); ?>
-				
 			<?php endif; ?>
 		</a>
 	</header><!-- .entry-header -->
@@ -21,7 +20,6 @@
 		<span><?php the_title(); ?></span> 
 		<span>................</span>
 		<span><?php echo CFS()->get( 'price' ); ?></span>
+	</div>
 
-		
-	</div><!-- .entry-meta -->
 </article><!-- #post-## -->

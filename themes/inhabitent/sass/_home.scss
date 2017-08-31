@@ -1,6 +1,6 @@
 .adventures {
     display: flex;
-     flex-direction: row;
+    flex-direction: row;
     flex-wrap: wrap;
    
     margin: 0;
@@ -27,11 +27,8 @@
         padding: 10px;
         }
     } 
-    
-    //     margin-left: 20px;
-} // .left{
-//   width:540px;
-// }
+} 
+   
 .all-adventures{
     display:flex;
 }
@@ -51,10 +48,10 @@
 }
 .adventures-container-beach {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, .4) 0, rgba(0, 0, 0, .4)), url(../../images/adventure-photos/beach-bonfire.jpg);
-     height: 250px;
+    height: 250px;
     width: 560px;
     background-size: cover;
-    margin-bottom: 20px; // order:1;
+    margin-bottom: 20px;
     h3 {
         font-size: 38px;
     }
@@ -62,7 +59,7 @@
 .adventures-container-mountain {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, .4) 0, rgba(0, 0, 0, .4)), url(../../images/adventure-photos/mountain-hikers.jpg);
     background-size: cover;
-   height: 265px;
+    height: 265px;
     width: 270px;
     margin-right: 20px;
     h3 {
@@ -82,12 +79,6 @@
 }
 .small-squares{
   display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
-
-// .adventures-text{
-//   color:white;
-//   text-transform: none;
-//   font-size: 48px;
-// }

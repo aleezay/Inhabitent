@@ -12,7 +12,6 @@ get_header(); ?>
 <div class="single-product-description-container">
 		<?php while ( have_posts() ) : the_post(); ?>
 
-<!--<div class="single-product-description"</div>-->
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>

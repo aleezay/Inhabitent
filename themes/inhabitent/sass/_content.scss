@@ -41,8 +41,6 @@
 	margin: 0 0 $base__space-unit;
 }
 
-
-
 /* Asides */
 
 .blog .format-aside .entry-title,
@@ -60,16 +58,11 @@
 }
 
 .site-header{
-	  border-bottom: 1px solid #e1e1e1;
+	  border-bottom: $solid-border;
 		    padding: .2rem 0;
 				z-index: 999;
-				// width:100%;
-				// position: fixed;
 }
 
 .site-content{
 	display:flex;
-	// margin:0, auto, 0, auto;
-	// margin-left: auto;
-  // margin-right: auto;
 }

@@ -14,11 +14,6 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
-
- /*       <h1 class="page-title"><?php single_term_title(); ?></h1>
-					<?php the_archive_description( '<p class="taxonomy-description">', '</p>' ); ?>
-*/
-
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
