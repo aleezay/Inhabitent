@@ -13,7 +13,7 @@
     $('.nav-search .search-submit').click(function(e){
       e.preventDefault();
 
-      $('.nav-search .search-field').toggleClass('.search-toggle');
+      $('.nav-search .search-field').toggleClass('search-toggle');
         $('.nav-search .search-field').focus();
     });
 

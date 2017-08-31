@@ -165,10 +165,11 @@ a {
 .nav-items-container{
 	padding-bottom: .2rem;
   padding-top: .75rem;
-	padding-right: 5rem;
 	height: 33px;
 	align-items: center;
-	width:40%;
-	// justify-content: center;
+	width:auto;
+	display:flex;
+	justify-content: center;
+	align-content: flex-end;
 }
 				

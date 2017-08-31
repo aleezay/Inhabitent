@@ -189,8 +189,7 @@ input[type="search"]::-webkit-search-decoration {
 
 fieldset {
 	border: none;
-	 width: 4rem;
-    display: inline;
+		width: 350px;
 	.search-submit{
 		border:none;
 		box-shadow:none;
@@ -198,29 +197,27 @@ fieldset {
 		font-size: 1.2rem;
 		flex-direction:row;
 		padding:0;
+		    
 	}
 }
 
 .search-form label{
 	    display: inline;
 }
-// .nav-search .search-toggle{
-// 	width: 5rem;
-// 	transition:1s;
-// }
+
 //search nav
 .nav-search .search-field{
 	width:0;
-	   transition: all 1s ease-out;
-		margin-bottom: 1rem;
-
+	   transition: width 1s ease-out;
 }
 
 .fa-search{
 	color:$color_brand-green;
-	padding-bottom:3rem;
 }
-
+.nav-search .search-toggle{
+	width: 90%;
+ transition: width 1s ease-out;
+}
 legend {
 	border: 0;
 	padding: 0;
