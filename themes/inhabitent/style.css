@@ -669,7 +669,6 @@ a {
   .widget select {
     max-width: 100%; }
 
-/* Search widget. */
 #secondary {
   padding-top: 60px;
   padding-left: 45px; }
@@ -846,12 +845,12 @@ body:not(.home):not(.page-template-about) :not(.tax-product-type) .site-content 
     .front-shop-terms .front-shop-term .green-button a {
       background-color: #248A83;
       color: white;
-      font-size: .8rem;
+      font-size: .9rem;
       line-height: 1;
       padding: .75rem 1.5rem;
       text-decoration: none;
       text-transform: uppercase;
-      font-family: "Merriweather", sans-serif; }
+      font-family: "Novecento Sans Web", sans-serif; }
 
 .journal-recent-block-item .front-grey-wrapper {
   width: 340px;
@@ -907,7 +906,7 @@ body:not(.home):not(.page-template-about) :not(.tax-product-type) .site-content 
     background-color: transparent;
     padding: .75rem;
     margin-left: 1rem;
-    font-size: 1rem;
+    font-size: .9rem;
     font-family: "Novecento Sans Web", sans-serif; }
     .black-button-read-cont .read-more-front:hover {
       background-color: #248A83; }
@@ -951,6 +950,9 @@ body:not(.home):not(.page-template-about) :not(.tax-product-type) .site-content 
   font-family: "Novecento Sans Web", sans-serif;
   font-weight: 400;
   letter-spacing: 2px; }
+
+.entry-header custom-hero {
+  background-size: cover; }
 
 /*Find Us Page*/
 .archive .entry-title {
@@ -1112,7 +1114,8 @@ h1.page-title {
   bottom: 8px;
   right: 0;
   padding-left: 1.2rem;
-  padding-right: 1.2rem; }
+  padding-right: 1.2rem;
+  font-family: "Novecento Sans Web", sans-serif; }
 
 .blog .entry-title, .post-template-default .entry-title {
   display: -ms-flexbox;
@@ -1129,9 +1132,28 @@ h1.page-title {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 2rem; }
+    font-size: 2.1rem; }
     .blog .entry-title a:hover, .post-template-default .entry-title a:hover {
       color: #fff9c0; }
+
+.black-button-read-cont {
+  margin-bottom: 4rem; }
+
+.journal-read-button {
+  color: #2f1339;
+  text-transform: uppercase;
+  border: 1px, solid, #2f1339;
+  border-radius: 0;
+  background-color: transparent;
+  padding: .75rem;
+  margin-left: 1rem;
+  font-size: .9rem;
+  font-family: "Novecento Sans Web", sans-serif;
+  text-decoration: none;
+  margin-left: 0;
+  padding: .7rem 1.7rem; }
+  .journal-read-button:hover {
+    background-color: #248A83; }
 
 /* Single Posts Page */
 .post-template-default .site-content .content-area {
@@ -1206,6 +1228,21 @@ label {
 .form-star {
   color: #d99054; }
 
+.social-button {
+  color: #2f1339;
+  text-transform: uppercase;
+  border: 1px, solid, #2f1339;
+  border-radius: 0;
+  background-color: transparent;
+  padding: .75rem;
+  margin-left: 1rem;
+  font-size: .9rem;
+  font-family: "Novecento Sans Web", sans-serif;
+  margin-left: 0;
+  padding: .7rem 1.5rem; }
+  .social-button:hover {
+    background-color: #248A83; }
+
 /*Single Product Page*/
 .single-product .hentry {
   display: -ms-flexbox;
@@ -1232,9 +1269,9 @@ label {
   .single-product-description-container .entry-header h2 {
     height: 55px; }
 
-.entry-content {
+.product-template-default .entry-content {
   width: 45%; }
-  .entry-content .BodyA {
+  .product-template-default .entry-content .BodyA {
     font-size: 1rem;
     line-height: 1.25; }
 
