@@ -1,4 +1,4 @@
-##INHABITENT
+#INHABITENT
 ### A multipage Wordpress site for a Hipster Camping Company
 
 This project was an introduction into creating a multipage Wordpress site with custom themes and plugins.
